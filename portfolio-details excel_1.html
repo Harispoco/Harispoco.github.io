@@ -159,7 +159,7 @@
       </div>
 
         <!-- STEP 1 -->
-        <h5><strong>Step 1 – Order IDs for Top Two Orders per Salesperson</strong></h5>
+        <h5 class="mt-4"><strong>Step 1 – Order IDs for Top Two Orders per Salesperson</strong></h5>
         <p>
           The first analysis identifies the Order IDs corresponding to the top two
           highest order amounts for each salesperson.
@@ -243,7 +243,7 @@
          
 
         <!-- STEP 2 -->
-        <h5><strong>Step 2 – Total Number of Orders by Year</strong></h5>
+        <h5 class="mt-4"><strong>Step 2 – Total Number of Orders by Year</strong></h5>
         <p>
           The second analysis calculates the total number of orders for specific years
           based on the order date.
@@ -290,24 +290,65 @@
           highlighting fluctuations in sales activity over time.
         </p>
 
+
+
+
         <!-- STEP 3 -->
-        <h5 class="mt-4">Step 3 – Total Sales by Salesperson Initial and Year</h5>
+          <h5 class="mt-4"><strong>Step 3 – Total Sales by Salesperson Initial and Year</strong></h5>
         <p>
           The final analysis calculates total sales amounts for salespeople whose names
           start with a specific letter in selected years.
         </p>
+        <h5><strong>Excel Formulas</strong></h5>
         <pre><code>
 =SUMPRODUCT(
   --(LEFT(Salesperson,1)=$H20),
   --(YEAR(Order_Date)=I$19),
   Order_Amount)
         </code></pre>
-        <p>
-          This formula groups sales performance by salesperson initials and year,
-          enabling segmented performance analysis.
+
+        <div class="text-center my-4">
+  <img src="assets/img/portfolio/porto-excel-1-4.png" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 85%;" 
+       alt="Tabel Of Sales">
+</div>
+         <h4><strong>Explanation (Step by Step)</strong></h4>
+
+      <div class="mb-3">
+    <p><strong>LEFT(Salesperson,1)</strong></p>
+    <p> 
+      → Extracts the first letter of each salesperson’s name
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>=H20</strong></p>
+    <p> 
+      → Filters by the selected initial (e.g., C, L, S).
+    </p>
+  </div>
+
+ <div class="mb-3">
+    <p><strong>YEAR(Order_Date)=I$19</strong></p>
+    <p> 
+      → Filters by year.
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>SUMPRODUCT()9</strong></p>
+    <p> 
+      → Sums the order amounts that meet all conditions.
+    </p>
+  </div>
+
+   <h5><strong>Outcome</strong></h5>
+        <p class="mb-4">
+          Enabled grouped performance analysis based on salesperson initials
+          and yearly trends.
         </p>
-      </div>
-    </div>
+
 
     <!-- RESULTS & INSIGHTS -->
     <div class="row mb-5">
