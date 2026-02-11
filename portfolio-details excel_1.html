@@ -135,7 +135,7 @@
         </p>
       </div>
     </div>
-    <img src="assets/img/portfolio/Screenshot 2026-02-11 083219.png" 
+    <img src="assets/img/portfolio/porto-excel-1-1.png" 
      alt="Tabel Of Sales"
      class="img-fluid d-block mx-auto my-4">
 
@@ -153,15 +153,20 @@
 
     <!-- STEP BY STEP PROCESS -->
     <div class="row mb-5">
-      <div class="col-lg-12">
+      <div class="col-lg-12 text-center">
         <h3>Step-by-Step Analysis Process</h3>
+        </div>
+      </div>
 
         <!-- STEP 1 -->
-        <h5>Step 1 – Order IDs for Top Two Orders per Salesperson</h5>
+        <h5><strong>Step 1 – Order IDs for Top Two Orders per Salesperson</strong></h5>
         <p>
           The first analysis identifies the Order IDs corresponding to the top two
           highest order amounts for each salesperson.
         </p>
+
+        <h5><strong>Excel Formulas</strong></h5>
+        
         <pre><code>
 =IFERROR(
   INDEX($E$3:$E$801,
@@ -169,12 +174,13 @@
       LARGE((I4=$C$3:$C$801)*$F$3:$F$801,ROW(A1)),
       $F$3:$F$801,0) ),"-")
         </code></pre>
-        <p>
-          This formula filters order amounts by salesperson, ranks the highest values,
-          and returns the related Order IDs while handling potential errors.
-        </p>
+        
+<img src="assets/img/portfolio/porto-excel-1-2.png" 
+     alt="Tabel Of Sales"
+     class="img-fluid d-block mx-auto my-4">
 
-         <h4> class="mb-4">Explanation (Step by Step)</h4>
+         <h4>Explanation (Step by Step)</h4>
+
 
   <div class="mb-3">
     <p><strong>(I4 = $C$3:$C$801)</strong></p>
@@ -223,10 +229,14 @@
 
 </section>
 
-        <p><strong>Result</strong></p>
-         <img src="assets/img/portfolio/Screenshot 2026-02-11 095338.png" 
-     alt="Tabel Of Sales"
-     class="img-fluid d-block mx-auto my-4">
+ <h5><strong>Outcome</strong></h5>
+        <p>
+          Successfully identified the top two highest-value transactions for each salesperson,
+          enabling quick recognition of high-impact sales.
+        </p>
+
+       
+         
 
         <!-- STEP 2 -->
         <h5 class="mt-4">Step 2 – Total Number of Orders by Year</h5>
