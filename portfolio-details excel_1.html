@@ -174,6 +174,60 @@
           and returns the related Order IDs while handling potential errors.
         </p>
 
+         <h4> class="mb-4">Explanation (Step by Step)</h4>
+
+  <div class="mb-3">
+    <p><strong>(I4 = $C$3:$C$801)</strong></p>
+    <p>
+      Filters the dataset to only include records that match the selected salesperson.
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>* $F$3:$F$801</strong></p>
+    <p>
+      Multiplies the filtered results with the order amounts, keeping only the 
+      relevant sales values for that salesperson.
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>LARGE(..., ROW(A1))</strong></p>
+    <p>
+      Extracts the largest and second largest order values dynamically.
+      The ROW function allows ranking (1st largest, 2nd largest).
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>MATCH(...)</strong></p>
+    <p>
+      Identifies the exact position of the selected order amounts within the dataset.
+    </p>
+  </div>
+
+  <div class="mb-3">
+    <p><strong>INDEX(...)</strong></p>
+    <p>
+      Returns the corresponding Order ID based on the matched position.
+    </p>
+  </div>
+
+  <div>
+    <p><strong>IFERROR()</strong></p>
+    <p>
+      Prevents formula errors by returning a placeholder value when fewer than 
+      two orders exist for a salesperson.
+    </p>
+  </div>
+
+</section>
+
+        <p><strong>Result</strong></p>
+         <img src="assets/img/portfolio/Screenshot 2026-02-11 095338.png" 
+     alt="Tabel Of Sales"
+     class="img-fluid d-block mx-auto my-4">
+
         <!-- STEP 2 -->
         <h5 class="mt-4">Step 2 – Total Number of Orders by Year</h5>
         <p>
