@@ -137,7 +137,7 @@
     </div>
     <img src="assets/img/portfolio/Screenshot 2026-02-11 083219.png" 
      alt="Tabel Of Sales"
-     class="img-fluid mt-3 mb-4">
+     class="img-fluid d-block mx-auto my-4">
 
     <!-- OBJECTIVES -->
     <div class="row mb-5">
@@ -167,11 +167,7 @@
   INDEX($E$3:$E$801,
     MATCH(
       LARGE((I4=$C$3:$C$801)*$F$3:$F$801,ROW(A1)),
-      $F$3:$F$801,
-      0
-    )
-  ),
-"-")
+      $F$3:$F$801,0) ),"-")
         </code></pre>
         <p>
           This formula filters order amounts by salesperson, ranks the highest values,
@@ -202,8 +198,7 @@
 =SUMPRODUCT(
   --(LEFT(Salesperson,1)=$H20),
   --(YEAR(Order_Date)=I$19),
-  Order_Amount
-)
+  Order_Amount)
         </code></pre>
         <p>
           This formula groups sales performance by salesperson initials and year,
@@ -216,11 +211,99 @@
     <div class="row mb-5">
       <div class="col-lg-12">
         <h3>Results & Insights</h3>
-        <ul>
-          <li>High-value sales transactions are concentrated among specific salespeople</li>
-          <li>Order volume varies across years, indicating changes in sales activity</li>
-          <li>Sales grouped by initials reveal performance gaps within the sales team</li>
-        </ul>
+          <h4>Results</h4>
+          <h5>Top Two Orders per Salesperson</h5>
+          <p>The analysis successfully identified the top two highest-value orders for each salesperson. 
+            Salespeople such as Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, and Suyama recorded two significant high-value orders. 
+            
+            Meanwhile, King and Peacock did not have qualifying top-ranked orders in the dataset, indicating either lower transaction values or limited order activity during the observed period.
+
+This ranking provides a clear comparison of individual sales impact based on transaction value.</p>
+          <h5>Number of Orders by Year</h5> 
+          <p>The total number of orders per year shows a noticeable fluctuation:
+
+1. 2004 → 399 orders (Highest)
+
+2. 2005 → 257 orders
+
+3. 2003 → 143 orders (Lowest)
+
+There was a significant increase from 2003 to 2004, followed by a decline in 2005.</p>
+         <h5>Total Sales by Initial Letter of Salesperson</h5>
+          <p>Sales performance grouped by the first letter of salesperson names shows the following:
+
+1. 2004
+
+C → $116,781.21
+
+L → $235,384.63 (Highest)
+
+S → $40,826.37
+
+2. 2005
+
+C → $88,821.59
+
+L → $130,416.25 (Highest)
+
+S → $17,181.58
+
+3. 2003
+
+C → $34,392.86
+
+L → $69,169.07 (Highest)
+
+S → $14,519.68
+
+Across all years, salespeople whose names start with "L" consistently generated the highest total sales.</p>
+
+<h4>Insight</h4>
+  <h5> 1. Peak Operational Year: 2004</h5>
+    <p>
+      2004 recorded the highest number of transactions (399 orders), indicating 
+      strong operational activity and market demand during that year.
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <h5> 2. Sales Contribution Concentration</h5>
+    <p>
+      Sales performance is heavily concentrated among specific individuals and 
+      name groups. The <strong>“L” group</strong> dominates total sales in all observed years.
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <h5> 3. Performance Disparity</h5>
+    <p>
+      The gap between the highest and lowest contributing groups is significant. 
+      For example, in 2004, the <strong>"L"</strong> group generated more than 
+      <strong>5x</strong> the revenue of the <strong>"S"</strong> group.
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <h5> 4. Strategic Implication</h5>
+    <ul>
+      <li>Sales performance evaluation</li>
+      <li>Incentive program design</li>
+      <li>Targeted coaching for lower-performing groups</li>
+      <li>Resource allocation planning</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5> 5. Data-Driven Monitoring</h5>
+    <p>
+      The use of advanced Excel formulas such as Array Formulas and 
+      <strong>SUMPRODUCT</strong> enables scalable performance tracking for future datasets 
+      without manual filtering.
+    </p>
+  </div>
+
+</section>
+        
       </div>
     </div>
 
