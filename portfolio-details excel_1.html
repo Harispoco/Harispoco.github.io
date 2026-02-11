@@ -189,14 +189,14 @@
   <div class="mb-3">
     <p><strong>(I4 = $C$3:$C$801)</strong></p>
     <p>
-      Filters the dataset to only include records that match the selected salesperson.
+       → Filters the dataset to only include records that match the selected salesperson.
     </p>
   </div>
 
   <div class="mb-3">
     <p><strong>* $F$3:$F$801</strong></p>
     <p>
-      Multiplies the filtered results with the order amounts, keeping only the 
+       → Multiplies the filtered results with the order amounts, keeping only the 
       relevant sales values for that salesperson.
     </p>
   </div>
@@ -204,7 +204,7 @@
   <div class="mb-3">
     <p><strong>LARGE(..., ROW(A1))</strong></p>
     <p>
-      Extracts the largest and second largest order values dynamically.
+       → Extracts the largest and second largest order values dynamically.
       The ROW function allows ranking (1st largest, 2nd largest).
     </p>
   </div>
@@ -212,21 +212,21 @@
   <div class="mb-3">
     <p><strong>MATCH(...)</strong></p>
     <p>
-      Identifies the exact position of the selected order amounts within the dataset.
+       → Identifies the exact position of the selected order amounts within the dataset.
     </p>
   </div>
 
   <div class="mb-3">
     <p><strong>INDEX(...)</strong></p>
     <p>
-      Returns the corresponding Order ID based on the matched position.
+       → Returns the corresponding Order ID based on the matched position.
     </p>
   </div>
 
   <div>
     <p><strong>IFERROR()</strong></p>
     <p>
-      Prevents formula errors by returning a placeholder value when fewer than 
+       → Prevents formula errors by returning a placeholder value when fewer than 
       two orders exist for a salesperson.
     </p>
   </div>
@@ -234,7 +234,7 @@
 </section>
 
  <h5><strong>Outcome</strong></h5>
-        <p> class="mb-4"
+        <p class="mb-4">
           Successfully identified the top two highest-value transactions for each salesperson,
           enabling quick recognition of high-impact sales.
         </p>
@@ -253,9 +253,41 @@
         <pre><code>
 =SUMPRODUCT(--(YEAR(Order_Date)=H12))
         </code></pre>
-        <p>
-          This approach extracts the year from each order date and counts only the
-          records that match the selected year.
+
+        <div class="text-center my-4">
+  <img src="assets/img/portfolio/porto-excel-1-3.png" 
+       class="img-fluid rounded shadow" 
+       style="max-width: 85%;" 
+       alt="Tabel Of Sales">
+</div>
+       <h4><strong>Explanation (Step by Step)</strong></h4>
+
+
+  <div class="mb-3">
+    <p><strong>YEAR(Order_Date)</strong></p>
+    <p> 
+      → Extracts the year from each order date
+    </p>
+  </div>
+
+   <div class="mb-3">
+    <p><strong>=H12</strong></p>
+    <p> 
+      → Filters orders by the selected year.
+    </p>
+  </div>
+  
+   <div class="mb-3">
+    <p><strong>SUMPRODUCT(--())</strong></p>
+    <p> 
+      → Converts TRUE/FALSE results into numeric counts.
+    </p>
+  </div>
+
+  <h5><strong>Outcome</strong></h5>
+        <p class="mb-4">
+          Generated a clear comparison of order volume across different years,
+          highlighting fluctuations in sales activity over time.
         </p>
 
         <!-- STEP 3 -->
