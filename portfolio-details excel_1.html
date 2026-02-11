@@ -174,6 +174,143 @@
       </div>
 
     </section><!-- /Portfolio Details Section -->
+     <!-- PROJECT TITLE -->
+    <div class="row mb-4">
+      <div class="col-lg-12 text-center">
+        <h1>Sales Order Analysis using Excel</h1>
+        <p class="text-muted">
+          An Excel-based data analysis project focusing on transaction ranking,
+          yearly order trends, and grouped sales performance.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h3>Project Overview</h3>
+        <p>
+          This project analyzes sales order data to extract meaningful insights
+          related to top-value transactions, order volume by year, and total sales
+          performance based on salesperson name initials. The analysis was conducted
+          entirely using Microsoft Excel with advanced formulas and conditional logic.
+        </p>
+      </div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h3>Objectives</h3>
+        <ul>
+          <li>Identify the top two highest-value orders for each salesperson</li>
+          <li>Calculate the total number of orders for specific years</li>
+          <li>Analyze total sales based on salesperson initials and selected years</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STEP BY STEP PROCESS -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h3>Step-by-Step Analysis Process</h3>
+
+        <!-- STEP 1 -->
+        <h5>Step 1 – Order IDs for Top Two Orders per Salesperson</h5>
+        <p>
+          The first analysis identifies the Order IDs corresponding to the top two
+          highest order amounts for each salesperson.
+        </p>
+        <pre><code>
+=IFERROR(
+  INDEX($E$3:$E$801,
+    MATCH(
+      LARGE((I4=$C$3:$C$801)*$F$3:$F$801,ROW(A1)),
+      $F$3:$F$801,
+      0
+    )
+  ),
+"-")
+        </code></pre>
+        <p>
+          This formula filters order amounts by salesperson, ranks the highest values,
+          and returns the related Order IDs while handling potential errors.
+        </p>
+
+        <!-- STEP 2 -->
+        <h5 class="mt-4">Step 2 – Total Number of Orders by Year</h5>
+        <p>
+          The second analysis calculates the total number of orders for specific years
+          based on the order date.
+        </p>
+        <pre><code>
+=SUMPRODUCT(--(YEAR(Order_Date)=H12))
+        </code></pre>
+        <p>
+          This approach extracts the year from each order date and counts only the
+          records that match the selected year.
+        </p>
+
+        <!-- STEP 3 -->
+        <h5 class="mt-4">Step 3 – Total Sales by Salesperson Initial and Year</h5>
+        <p>
+          The final analysis calculates total sales amounts for salespeople whose names
+          start with a specific letter in selected years.
+        </p>
+        <pre><code>
+=SUMPRODUCT(
+  --(LEFT(Salesperson,1)=$H20),
+  --(YEAR(Order_Date)=I$19),
+  Order_Amount
+)
+        </code></pre>
+        <p>
+          This formula groups sales performance by salesperson initials and year,
+          enabling segmented performance analysis.
+        </p>
+      </div>
+    </div>
+
+    <!-- RESULTS & INSIGHTS -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h3>Results & Insights</h3>
+        <ul>
+          <li>High-value sales transactions are concentrated among specific salespeople</li>
+          <li>Order volume varies across years, indicating changes in sales activity</li>
+          <li>Sales grouped by initials reveal performance gaps within the sales team</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BUSINESS VALUE -->
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h3>Business Value</h3>
+        <p>
+          This analysis helps management quickly identify top-performing sales
+          transactions, monitor yearly trends, and evaluate grouped sales performance.
+          The approach reduces manual reporting and supports data-driven decision making.
+        </p>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Tools & Skills Used</h3>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>Array formulas & SUMPRODUCT</li>
+          <li>Date and text-based data filtering</li>
+          <li>Analytical problem-solving</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+ <!-- end-->
 
   </main>
 
