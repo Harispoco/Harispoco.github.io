@@ -166,8 +166,7 @@
         </p>
 
         <h5><strong>Excel Formulas</strong></h5>
-        
-        <pre><code>
+         <pre><code>
 =IFERROR(
   INDEX($E$3:$E$801,
     MATCH(
@@ -184,7 +183,7 @@
 
 
 
-         <h4>Explanation (Step by Step)</h4>
+         <h4><strong>Explanation (Step by Step)</strong></h4>
 
 
   <div class="mb-3">
@@ -235,7 +234,7 @@
 </section>
 
  <h5><strong>Outcome</strong></h5>
-        <p>
+        <p> class="mb-4"
           Successfully identified the top two highest-value transactions for each salesperson,
           enabling quick recognition of high-impact sales.
         </p>
@@ -249,7 +248,7 @@
           The second analysis calculates the total number of orders for specific years
           based on the order date.
         </p>
-        
+
         <h5><strong>Excel Formulas</strong></h5>
         <pre><code>
 =SUMPRODUCT(--(YEAR(Order_Date)=H12))
