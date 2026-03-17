@@ -34,6 +34,17 @@
     .info-card .value{font-size:0.92rem;font-weight:500;color:#212529;}
     .pbi-hero{background:linear-gradient(135deg,#0078d418,#0078d408);border-radius:12px;display:flex;align-items:center;justify-content:center;height:180px;margin-bottom:24px;}
     .pbi-hero i{font-size:5rem;color:#0078d4;opacity:0.7;}
+
+    /* Nuclear override — force ALL text in section to be dark */
+    #portfolio-details,
+    #portfolio-details *:not(.lang-btn.active) {
+      color: #212529 !important;
+    }
+    #portfolio-details .lang-btn.active { color: #fff !important; }
+    #portfolio-details .lang-btn:not(.active) { color: #6c757d !important; }
+    #portfolio-details .kpi-value { color: #0078d4 !important; }
+    #portfolio-details .finding-card h5 { color: #0078d4 !important; }
+    #portfolio-details .pbi-hero i { color: #0078d4 !important; }
   </style>
 </head>
 <body class="portfolio-details-page">

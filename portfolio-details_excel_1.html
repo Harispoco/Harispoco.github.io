@@ -95,6 +95,19 @@
     }
     .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529 !important; }
 
+    /* Nuclear override — force ALL text in section to be dark */
+    #portfolio-details,
+    #portfolio-details *:not(.lang-btn.active):not(.step-badge):not(.formula-box) {
+      color: #212529 !important;
+    }
+    #portfolio-details .step-badge { color: #fff !important; }
+    #portfolio-details .formula-box { color: #f8f9fa !important; }
+    #portfolio-details .lang-btn.active { color: #fff !important; }
+    #portfolio-details .lang-btn:not(.active) { color: #6c757d !important; }
+    #portfolio-details .kpi-value { color: #1d6f42 !important; }
+    #portfolio-details .insight-card h5 { color: #1d6f42 !important; }
+    #portfolio-details .section-title-line { color: #212529 !important; }
+
     /* Force all text inside lang-content to be visible */
     .lang-content.visible h2,
     .lang-content.visible h3,
