@@ -41,6 +41,36 @@
     .lang-content.visible h2,.lang-content.visible h3,.lang-content.visible h4,
     .lang-content.visible h5,.lang-content.visible p,.lang-content.visible li,
     .lang-content.visible strong{color:#212529!important;}
+
+    /* ===== TARGETED FIX: Dark text only inside light-background cards ===== */
+    /* These cards have white/light bg — text must be dark to be visible       */
+    .step-card,
+    .insight-card,
+    .finding-card,
+    .content-card,
+    .highlight-box,
+    .kpi-card,
+    .info-card {
+      color: #212529 !important;
+    }
+    .step-card *,
+    .insight-card *,
+    .finding-card *,
+    .content-card *,
+    .highlight-box *,
+    .kpi-card *,
+    .info-card * {
+      color: #212529 !important;
+    }
+    /* Re-apply accent colors for specific elements inside cards */
+    .insight-card h5 { color: #0078d4 !important; }
+    .kpi-value { color: #0078d4 !important; }
+    .step-badge { background: #0078d4; color: #fff !important; }
+    .formula-box { background: #212529; color: #f8f9fa !important; }
+    .formula-box * { color: #f8f9fa !important; }
+    .finding-card h5 { color: #0078d4 !important; }
+    /* Section title lines stay white (dark bg) but have accent border */
+    .section-title-line { border-left: 4px solid #0078d4; padding-left: 12px; margin-bottom: 14px; }
   </style>
 </head>
 <body class="portfolio-details-page">
@@ -314,5 +344,39 @@
       });
     }
   </script>
+
+  <!-- FINAL OVERRIDE — loaded last to beat main.css on dark-background template -->
+  <style>
+    /* Cards with light bg — force dark text */
+    .finding-card, .finding-card *,
+    .content-card, .content-card *,
+    .highlight-box, .highlight-box *,
+    .kpi-card, .kpi-card * { color: inherit; }
+
+    .finding-card p, .finding-card li,
+    .finding-card span, .finding-card strong { color: #212529 !important; }
+    .finding-card h5 { color: #0078d4 !important; }
+
+    .content-card p, .content-card li,
+    .content-card span, .content-card strong { color: #212529 !important; }
+
+    .highlight-box, .highlight-box p,
+    .highlight-box strong, .highlight-box span { color: #212529 !important; }
+
+    .info-card .value { color: #212529 !important; }
+    .info-card .label { color: #6c757d !important; }
+
+    .kpi-value { color: #0078d4 !important; }
+    .kpi-label { color: #6c757d !important; }
+
+    .lang-btn.active { color: #fff !important; }
+    .lang-btn:not(.active) { color: #6c757d !important; }
+
+    /* Section headings on dark bg — keep white */
+    #portfolio-details h2,
+    #portfolio-details h3,
+    #portfolio-details h4 { color: #fff !important; }
+  </style>
+
 </body>
 </html>

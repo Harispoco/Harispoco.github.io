@@ -35,16 +35,35 @@
     .pbi-hero{background:linear-gradient(135deg,#0078d418,#0078d408);border-radius:12px;display:flex;align-items:center;justify-content:center;height:180px;margin-bottom:24px;}
     .pbi-hero i{font-size:5rem;color:#0078d4;opacity:0.7;}
 
-    /* Nuclear override — force ALL text in section to be dark */
-    #portfolio-details,
-    #portfolio-details *:not(.lang-btn.active) {
+    /* ===== TARGETED FIX: Dark text only inside light-background cards ===== */
+    /* These cards have white/light bg — text must be dark to be visible       */
+    .step-card,
+    .insight-card,
+    .finding-card,
+    .content-card,
+    .highlight-box,
+    .kpi-card,
+    .info-card {
       color: #212529 !important;
     }
-    #portfolio-details .lang-btn.active { color: #fff !important; }
-    #portfolio-details .lang-btn:not(.active) { color: #6c757d !important; }
-    #portfolio-details .kpi-value { color: #0078d4 !important; }
-    #portfolio-details .finding-card h5 { color: #0078d4 !important; }
-    #portfolio-details .pbi-hero i { color: #0078d4 !important; }
+    .step-card *,
+    .insight-card *,
+    .finding-card *,
+    .content-card *,
+    .highlight-box *,
+    .kpi-card *,
+    .info-card * {
+      color: #212529 !important;
+    }
+    /* Re-apply accent colors for specific elements inside cards */
+    .insight-card h5 { color: #0078d4 !important; }
+    .kpi-value { color: #0078d4 !important; }
+    .step-badge { background: #0078d4; color: #fff !important; }
+    .formula-box { background: #212529; color: #f8f9fa !important; }
+    .formula-box * { color: #f8f9fa !important; }
+    .finding-card h5 { color: #0078d4 !important; }
+    /* Section title lines stay white (dark bg) but have accent border */
+    .section-title-line { border-left: 4px solid #0078d4; padding-left: 12px; margin-bottom: 14px; }
   </style>
 </head>
 <body class="portfolio-details-page">

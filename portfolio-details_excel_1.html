@@ -94,35 +94,42 @@
       text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
     }
     .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529 !important; }
-
-    /* Nuclear override — force ALL text in section to be dark */
-    #portfolio-details,
-    #portfolio-details *:not(.lang-btn.active):not(.step-badge):not(.formula-box) {
-      color: #212529 !important;
-    }
-    #portfolio-details .step-badge { color: #fff !important; }
-    #portfolio-details .formula-box { color: #f8f9fa !important; }
-    #portfolio-details .lang-btn.active { color: #fff !important; }
-    #portfolio-details .lang-btn:not(.active) { color: #6c757d !important; }
-    #portfolio-details .kpi-value { color: #1d6f42 !important; }
-    #portfolio-details .insight-card h5 { color: #1d6f42 !important; }
-    #portfolio-details .section-title-line { color: #212529 !important; }
-
-    /* Force all text inside lang-content to be visible */
-    .lang-content.visible h2,
-    .lang-content.visible h3,
-    .lang-content.visible h4,
-    .lang-content.visible h5,
-    .lang-content.visible h6,
-    .lang-content.visible p,
-    .lang-content.visible li,
-    .lang-content.visible strong { color: #212529 !important; }
     .excel-hero {
       background: linear-gradient(135deg, #1d6f4218, #1d6f4208);
       border-radius: 12px; display: flex; align-items: center;
       justify-content: center; height: 180px; margin-bottom: 24px;
     }
     .excel-hero i { font-size: 5rem; color: #1d6f42; opacity: 0.7; }
+
+    /* ===== TARGETED FIX: Dark text only inside light-background cards ===== */
+    /* These cards have white/light bg — text must be dark to be visible       */
+    .step-card,
+    .insight-card,
+    .finding-card,
+    .content-card,
+    .highlight-box,
+    .kpi-card,
+    .info-card {
+      color: #212529 !important;
+    }
+    .step-card *,
+    .insight-card *,
+    .finding-card *,
+    .content-card *,
+    .highlight-box *,
+    .kpi-card *,
+    .info-card * {
+      color: #212529 !important;
+    }
+    /* Re-apply accent colors for specific elements inside cards */
+    .insight-card h5 { color: #1d6f42 !important; }
+    .kpi-value { color: #1d6f42 !important; }
+    .step-badge { background: #1d6f42; color: #fff !important; }
+    .formula-box { background: #212529; color: #f8f9fa !important; }
+    .formula-box * { color: #f8f9fa !important; }
+    
+    /* Section title lines stay white (dark bg) but have accent border */
+    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; }
   </style>
 </head>
 
@@ -623,6 +630,50 @@
       });
     }
   </script>
+
+  <!-- FINAL OVERRIDE — loaded last to beat main.css on dark-background template -->
+  <style>
+    /* All text inside cards/boxes must be dark (visible on light backgrounds) */
+    .step-card, .step-card *,
+    .insight-card, .insight-card *,
+    .highlight-box, .highlight-box *,
+    .info-card .value,
+    .formula-box { color: inherit; }
+
+    .step-card h2, .step-card h3, .step-card h4,
+    .step-card h5, .step-card h6,
+    .step-card p, .step-card li, .step-card span,
+    .step-card strong { color: #212529 !important; }
+
+    .insight-card h2, .insight-card h3, .insight-card h4,
+    .insight-card h6,
+    .insight-card p, .insight-card li, .insight-card span,
+    .insight-card strong { color: #212529 !important; }
+    .insight-card h5 { color: #1d6f42 !important; }
+
+    .highlight-box, .highlight-box p,
+    .highlight-box strong, .highlight-box span,
+    .highlight-box i ~ * { color: #212529 !important; }
+
+    .info-card .value { color: #212529 !important; }
+    .info-card .label { color: #6c757d !important; }
+
+    .kpi-value { color: #1d6f42 !important; }
+    .kpi-label { color: #6c757d !important; }
+
+    .step-badge { color: #fff !important; }
+    .formula-box { color: #f8f9fa !important; }
+    .lang-btn.active { color: #fff !important; }
+
+    /* Section headings — visible on dark bg */
+    #portfolio-details h2,
+    #portfolio-details h3,
+    #portfolio-details h4 { color: #fff !important; }
+
+    /* Paragraph text directly in section (dark bg) */
+    #portfolio-details > .container > .row > .col-lg-9 > .lang-content.visible > div > p,
+    #portfolio-details > .container > .row > .col-lg-9 > .lang-content.visible > div > ul > li { color: #fff !important; }
+  </style>
 
 </body>
 </html>
