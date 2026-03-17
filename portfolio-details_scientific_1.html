@@ -1,94 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0ZGDD97NR9');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0ZGDD97NR9');</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Scientific Writing - PT Phapros Tbk</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
   <style>
-    .badge-unpublished {
-      background-color: #6c757d;
-      color: #fff;
-      font-size: 0.78rem;
-      padding: 5px 14px;
-      border-radius: 20px;
-      display: inline-block;
-    }
-    .info-card {
-      background: #f8f9fa;
-      border-left: 4px solid #0d6efd;
-      border-radius: 6px;
-      padding: 14px 18px;
-      margin-bottom: 12px;
-    }
-    .info-card .label {
-      font-size: 0.78rem;
-      color: #6c757d;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 2px;
-    }
-    .info-card .value {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #212529;
-    }
-    .section-title-line {
-      border-left: 4px solid #0d6efd;
-      padding-left: 12px;
-      margin-bottom: 12px;
-    }
-    .scientific-hero {
-      background: linear-gradient(135deg, #0d6efd18, #0d6efd08);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 220px;
-      margin-bottom: 32px;
-    }
-    .scientific-hero i {
-      font-size: 6rem;
-      color: #0d6efd;
-      opacity: 0.6;
-    }
-    .highlight-box {
-      background: #fff8e1;
-      border-left: 4px solid #ffc107;
-      border-radius: 6px;
-      padding: 14px 18px;
-      font-size: 0.93rem;
-      color: #212529 !important;
-    }
+    .badge-unpublished { background-color:#6c757d; color:#fff; font-size:0.78rem; padding:5px 14px; border-radius:20px; display:inline-block; }
+    .info-card { background:#f8f9fa; border-left:4px solid #0d6efd; border-radius:6px; padding:14px 18px; margin-bottom:12px; }
+    .info-card .label { font-size:0.78rem; color:#6c757d; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:2px; }
+    .info-card .value { font-size:0.95rem; font-weight:500; color:#212529; }
+    .section-title-line { border-left:4px solid #0d6efd; padding-left:12px; margin-bottom:12px; }
+    .scientific-hero { background:linear-gradient(135deg,#0d6efd18,#0d6efd08); border-radius:12px; display:flex; align-items:center; justify-content:center; height:220px; margin-bottom:32px; }
+    .scientific-hero i { font-size:6rem; color:#0d6efd; opacity:0.6; }
+    .highlight-box { background:#fff8e1; border-left:4px solid #ffc107; border-radius:6px; padding:14px 18px; font-size:0.93rem; color:#212529 !important; }
+
+    /* Language Toggle */
+    .lang-toggle-wrapper { display:flex; align-items:center; gap:4px; background:#f1f3f5; border-radius:50px; padding:4px; width:fit-content; }
+    .lang-btn { border:none; background:transparent; border-radius:50px; padding:6px 18px; font-size:0.85rem; font-weight:600; cursor:pointer; color:#6c757d; transition:all 0.2s ease; }
+    .lang-btn.active { background:#0d6efd; color:#fff; box-shadow:0 2px 8px rgba(13,110,253,0.3); }
+    .lang-btn:hover:not(.active) { background:#dee2e6; color:#212529; }
+    .lang-content { display:none; }
+    .lang-content.visible { display:block; }
+    span.lang-content.visible { display:inline; }
   </style>
 </head>
 
@@ -96,15 +41,13 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Portofolio</h1>
-      </a>
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Portofolio</h1></a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="Portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="portfolio.html" class="active">Portofolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -114,7 +57,6 @@
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -130,130 +72,146 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Portfolio.html">Portofolio</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
             <li class="current">Scientific Writing 1</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span style="font-size:0.85rem; color:#6c757d; font-weight:500;">
+            <i class="bi bi-translate me-1"></i>Language / Bahasa:
+          </span>
+          <div class="lang-toggle-wrapper">
+            <button class="lang-btn active" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+            <button class="lang-btn" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+          </div>
+        </div>
+
         <div class="row gy-4">
 
-          <!-- LEFT: Hero & Info -->
+          <!-- LEFT -->
           <div class="col-lg-4">
+            <div class="scientific-hero"><i class="bi bi-file-earmark-text"></i></div>
 
-            <!-- Icon Hero -->
-            <div class="scientific-hero">
-              <i class="bi bi-file-earmark-text"></i>
-            </div>
-
-            <!-- Info Cards -->
             <div class="info-card">
-              <div class="label"><i class="bi bi-tag me-1"></i>Kategori</div>
+              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="id">Kategori</span><span class="lang-content" data-lang="en">Category</span></div>
               <div class="value">Scientific Writing</div>
             </div>
             <div class="info-card">
-              <div class="label"><i class="bi bi-building me-1"></i>Objek Penelitian</div>
+              <div class="label"><i class="bi bi-building me-1"></i><span class="lang-content visible" data-lang="id">Objek Penelitian</span><span class="lang-content" data-lang="en">Research Object</span></div>
               <div class="value">PT Phapros Tbk</div>
             </div>
             <div class="info-card">
-              <div class="label"><i class="bi bi-calendar3 me-1"></i>Periode Data</div>
+              <div class="label"><i class="bi bi-calendar3 me-1"></i><span class="lang-content visible" data-lang="id">Periode Data</span><span class="lang-content" data-lang="en">Data Period</span></div>
               <div class="value">2021 – 2023</div>
             </div>
             <div class="info-card">
-              <div class="label"><i class="bi bi-journal-text me-1"></i>Metode</div>
-              <div class="value">Deskriptif Kuantitatif</div>
+              <div class="label"><i class="bi bi-journal-text me-1"></i><span class="lang-content visible" data-lang="id">Metode</span><span class="lang-content" data-lang="en">Method</span></div>
+              <div class="value"><span class="lang-content visible" data-lang="id">Deskriptif Kuantitatif</span><span class="lang-content" data-lang="en">Quantitative Descriptive</span></div>
             </div>
             <div class="info-card">
               <div class="label"><i class="bi bi-info-circle me-1"></i>Status</div>
               <div class="value"><span class="badge-unpublished">Unpublished</span></div>
             </div>
 
-            <!-- View Button -->
             <div class="mt-4">
-              <a href="https://drive.google.com/file/d/14dABaestqarQr2Xtx80n4qQc-19iuvfn/view?usp=drive_link"
-                 target="_blank"
-                 class="btn btn-primary w-100">
-                <i class="bi bi-eye me-2"></i>View Full Paper
+              <a href="https://drive.google.com/file/d/14dABaestqarQr2Xtx80n4qQc-19iuvfn/view?usp=drive_link" target="_blank" class="btn btn-primary w-100">
+                <i class="bi bi-eye me-2"></i>
+                <span class="lang-content visible" data-lang="id">Lihat Paper Lengkap</span>
+                <span class="lang-content" data-lang="en">View Full Paper</span>
               </a>
             </div>
             <div class="mt-2">
               <a href="portfolio.html" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-arrow-left me-2"></i>Kembali ke Portofolio
+                <i class="bi bi-arrow-left me-2"></i>
+                <span class="lang-content visible" data-lang="id">Kembali ke Portofolio</span>
+                <span class="lang-content" data-lang="en">Back to Portfolio</span>
               </a>
             </div>
-
           </div>
 
-          <!-- RIGHT: Content -->
+          <!-- RIGHT -->
           <div class="col-lg-8">
 
-            <!-- Judul -->
-            <h3 class="fw-bold mb-2">Analisis Likuiditas Dan Rentabilitas Terhadap Laba Perusahaan Pada PT Phapros Tbk</h3>
-            <hr class="mb-4">
-
-            <!-- Abstrak -->
-            <div class="mb-4">
-              <h5 class="section-title-line">Abstrak</h5>
-              <p style="text-align: justify;">
-                Penelitian ini bertujuan untuk menganalisis kinerja keuangan PT Phapros Tbk pada periode 2021–2023 
-                menggunakan pendekatan rasio keuangan, meliputi rasio likuiditas, rentabilitas, aktivitas, dan profitabilitas. 
-                Data yang digunakan merupakan data sekunder berupa laporan keuangan tahunan yang dipublikasikan resmi 
-                melalui Bursa Efek Indonesia (BEI), mencakup neraca, laporan laba rugi, laporan arus kas, dan laporan 
-                perubahan ekuitas. Pengolahan data dilakukan dengan metode deskriptif kuantitatif untuk menghitung 
-                berbagai rasio keuangan yang relevan.
-              </p>
+            <!-- INDONESIA -->
+            <div class="lang-content visible" data-lang="id">
+              <h3 class="fw-bold mb-2">Analisis Likuiditas Dan Rentabilitas Terhadap Laba Perusahaan Pada PT Phapros Tbk</h3>
+              <hr class="mb-4">
+              <div class="mb-4">
+                <h5 class="section-title-line">Abstrak</h5>
+                <p style="text-align:justify;">Penelitian ini bertujuan untuk menganalisis kinerja keuangan PT Phapros Tbk pada periode 2021–2023 menggunakan pendekatan rasio keuangan, meliputi rasio likuiditas, rentabilitas, aktivitas, dan profitabilitas. Data yang digunakan merupakan data sekunder berupa laporan keuangan tahunan yang dipublikasikan resmi melalui Bursa Efek Indonesia (BEI), mencakup neraca, laporan laba rugi, laporan arus kas, dan laporan perubahan ekuitas. Pengolahan data dilakukan dengan metode deskriptif kuantitatif untuk menghitung berbagai rasio keuangan yang relevan.</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Tujuan Penelitian</h5>
+                <p style="text-align:justify;">Penelitian ini bertujuan untuk menganalisis dan mengevaluasi kinerja keuangan PT Phapros Tbk selama periode 2021–2023 melalui pendekatan rasio keuangan, serta mengidentifikasi tren dan tantangan yang dihadapi perusahaan dalam menjaga efisiensi operasional dan kemampuan memenuhi kewajiban jangka pendeknya.</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Metodologi</h5>
+                <p style="text-align:justify;">Penelitian ini menggunakan metode <strong>deskriptif kuantitatif</strong> dengan data sekunder yang bersumber dari laporan keuangan resmi PT Phapros Tbk yang diunduh dari situs Bursa Efek Indonesia (BEI). Analisis dilakukan terhadap empat kelompok rasio keuangan:</p>
+                <ul>
+                  <li><strong>Rasio Likuiditas</strong> — mengukur kemampuan memenuhi kewajiban jangka pendek</li>
+                  <li><strong>Rasio Rentabilitas</strong> — mengukur kemampuan menghasilkan laba dari operasional</li>
+                  <li><strong>Rasio Aktivitas</strong> — mengukur efisiensi pengelolaan aset dan persediaan</li>
+                  <li><strong>Rasio Profitabilitas</strong> — mencakup NPM, ROI, dan margin laba bersih</li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Hasil &amp; Kesimpulan</h5>
+                <p style="text-align:justify;">Berdasarkan hasil analisis, kinerja keuangan PT Phapros Tbk selama periode 2021–2023 menunjukkan tren penurunan di berbagai aspek:</p>
+                <ul>
+                  <li><strong>Likuiditas</strong> mengalami penurunan, mencerminkan berkurangnya kemampuan perusahaan dalam memenuhi kewajiban jangka pendek.</li>
+                  <li><strong>Rentabilitas</strong> mengalami penurunan cukup signifikan, meskipun masih berada dalam kisaran standar industri.</li>
+                  <li><strong>Profitabilitas</strong> menurun, terlihat dari turunnya margin laba bersih, Net Profit Margin (NPM), dan Return on Investment (ROI).</li>
+                  <li><strong>Rasio Aktivitas</strong> juga menurun, mengindikasikan perlunya perbaikan dalam pengelolaan aset dan manajemen persediaan.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-lightbulb-fill text-warning me-2"></i>
+                  <strong>Catatan Penting:</strong> Meskipun terjadi penurunan di berbagai indikator, kondisi keuangan perusahaan secara keseluruhan masih berada dalam kisaran standar industri. Namun demikian, tantangan dalam menjaga efisiensi operasional perlu menjadi perhatian manajemen ke depannya.
+                </div>
+              </div>
             </div>
 
-            <!-- Tujuan Penelitian -->
-            <div class="mb-4">
-              <h5 class="section-title-line">Tujuan Penelitian</h5>
-              <p style="text-align: justify;">
-                Penelitian ini bertujuan untuk menganalisis dan mengevaluasi kinerja keuangan PT Phapros Tbk 
-                selama periode 2021–2023 melalui pendekatan rasio keuangan, serta mengidentifikasi tren dan 
-                tantangan yang dihadapi perusahaan dalam menjaga efisiensi operasional dan kemampuan memenuhi 
-                kewajiban jangka pendeknya.
-              </p>
-            </div>
-
-            <!-- Metodologi -->
-            <div class="mb-4">
-              <h5 class="section-title-line">Metodologi</h5>
-              <p style="text-align: justify;">
-                Penelitian ini menggunakan metode <strong>deskriptif kuantitatif</strong> dengan data sekunder yang 
-                bersumber dari laporan keuangan resmi PT Phapros Tbk yang diunduh dari situs Bursa Efek Indonesia (BEI). 
-                Analisis dilakukan terhadap empat kelompok rasio keuangan:
-              </p>
-              <ul>
-                <li><strong>Rasio Likuiditas</strong> — mengukur kemampuan memenuhi kewajiban jangka pendek</li>
-                <li><strong>Rasio Rentabilitas</strong> — mengukur kemampuan menghasilkan laba dari operasional</li>
-                <li><strong>Rasio Aktivitas</strong> — mengukur efisiensi pengelolaan aset dan persediaan</li>
-                <li><strong>Rasio Profitabilitas</strong> — mencakup NPM, ROI, dan margin laba bersih</li>
-              </ul>
-            </div>
-
-            <!-- Hasil & Kesimpulan -->
-            <div class="mb-4">
-              <h5 class="section-title-line">Hasil & Kesimpulan</h5>
-              <p style="text-align: justify;">
-                Berdasarkan hasil analisis, kinerja keuangan PT Phapros Tbk selama periode 2021–2023 menunjukkan 
-                tren penurunan di berbagai aspek:
-              </p>
-              <ul>
-                <li><strong>Likuiditas</strong> mengalami penurunan, mencerminkan berkurangnya kemampuan perusahaan dalam memenuhi kewajiban jangka pendek.</li>
-                <li><strong>Rentabilitas</strong> mengalami penurunan cukup signifikan, meskipun masih berada dalam kisaran standar industri.</li>
-                <li><strong>Profitabilitas</strong> menurun, terlihat dari turunnya margin laba bersih, Net Profit Margin (NPM), dan Return on Investment (ROI).</li>
-                <li><strong>Rasio Aktivitas</strong> juga menurun, mengindikasikan perlunya perbaikan dalam pengelolaan aset dan manajemen persediaan.</li>
-              </ul>
-
-              <div class="highlight-box mt-3">
-                <i class="bi bi-lightbulb-fill text-warning me-2"></i>
-                <strong>Catatan Penting:</strong> Meskipun terjadi penurunan di berbagai indikator, kondisi keuangan 
-                perusahaan secara keseluruhan masih berada dalam kisaran standar industri. Namun demikian, tantangan 
-                dalam menjaga efisiensi operasional perlu menjadi perhatian manajemen ke depannya.
+            <!-- ENGLISH -->
+            <div class="lang-content" data-lang="en">
+              <h3 class="fw-bold mb-2">Liquidity and Profitability Analysis on Company Earnings at PT Phapros Tbk</h3>
+              <hr class="mb-4">
+              <div class="mb-4">
+                <h5 class="section-title-line">Abstract</h5>
+                <p style="text-align:justify;">This study aims to analyze the financial performance of PT Phapros Tbk for the period 2021–2023 using a financial ratio approach, covering liquidity, rentability, activity, and profitability ratios. The data used consists of secondary data in the form of annual financial statements officially published through the Indonesia Stock Exchange (IDX), including balance sheets, income statements, cash flow statements, and statements of changes in equity. Data processing was carried out using a quantitative descriptive method to calculate various relevant financial ratios.</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Research Objectives</h5>
+                <p style="text-align:justify;">This study aims to analyze and evaluate the financial performance of PT Phapros Tbk during the 2021–2023 period through a financial ratio approach, and to identify trends and challenges faced by the company in maintaining operational efficiency and its ability to meet short-term obligations.</p>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Methodology</h5>
+                <p style="text-align:justify;">This study uses a <strong>quantitative descriptive</strong> method with secondary data sourced from the official financial statements of PT Phapros Tbk, downloaded from the Indonesia Stock Exchange (IDX) website. The analysis covers four groups of financial ratios:</p>
+                <ul>
+                  <li><strong>Liquidity Ratios</strong> — measuring the ability to meet short-term obligations</li>
+                  <li><strong>Rentability Ratios</strong> — measuring the ability to generate profit from operations</li>
+                  <li><strong>Activity Ratios</strong> — measuring efficiency in asset and inventory management</li>
+                  <li><strong>Profitability Ratios</strong> — including NPM, ROI, and net profit margin</li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <h5 class="section-title-line">Results &amp; Conclusion</h5>
+                <p style="text-align:justify;">Based on the analysis, the financial performance of PT Phapros Tbk during 2021–2023 showed a declining trend across various aspects:</p>
+                <ul>
+                  <li><strong>Liquidity</strong> declined, reflecting a reduced ability of the company to meet its short-term obligations.</li>
+                  <li><strong>Rentability</strong> experienced a significant decline, although still within the industry standard range.</li>
+                  <li><strong>Profitability</strong> decreased, as seen from the decline in net profit margin, Net Profit Margin (NPM), and Return on Investment (ROI).</li>
+                  <li><strong>Activity Ratios</strong> also declined, indicating the need for improvement in asset management and overall inventory management.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-lightbulb-fill text-warning me-2"></i>
+                  <strong>Key Note:</strong> Despite the decline across various indicators, the company's overall financial condition remains within industry standards. However, the challenge of maintaining operational efficiency should be a key focus for management going forward.
+                </div>
               </div>
             </div>
 
@@ -272,12 +230,8 @@
         <a href="https://www.linkedin.com/in/haris-saputra-1b4807245"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span></div>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
@@ -296,6 +250,16 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+      });
+    }
+  </script>
 
 </body>
 </html>
