@@ -3,14 +3,13 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZGDD97NR9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0ZGDD97NR9');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>About - Personal Bootstrap Template</title>
@@ -36,6 +35,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Interest item description text */
+    .features-item p {
+      font-size: 0.82rem;
+      color: #6c757d;
+      margin-top: 4px;
+      margin-bottom: 0;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Personal
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -51,22 +60,19 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Portofolio</h1>
       </a>
 
-     <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="portfolio.html">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
   </header>
@@ -100,75 +106,74 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
     </div><!-- End Page Title -->
 
     <!-- About Section -->
-  <h2>Management Student | Data, Business & Financial Analyst Enthusiast</h2>
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
 
+        <h2>Management Student | Data, Business &amp; Financial Analyst Enthusiast</h2>
 
-<div class="col-lg-8 content text-justify">
-<p class="fst-italic py-3">
-  A Management student with a strong interest in data-driven decision making, business strategy, and financial analysis.
-</p>
-
-<p>
-    I am currently a Management student with a deep interest in Data Analytics, Business Analysis, 
-  and Financial Analysis. My academic background has equipped me with a solid understanding of 
-  business fundamentals, strategic management, and financial concepts, which I continuously strengthen 
-  through practical data analysis and real-world projects.
-</p>
-
-<p>
-    I am passionate about transforming raw data into meaningful insights that support strategic planning 
-  and business growth. I enjoy analyzing datasets, identifying trends, evaluating financial performance, 
-  and translating complex information into clear, actionable recommendations. 
-  For me, data is not just numbers, it is a powerful tool to improve efficiency, reduce risks, 
-  and enhance overall business performance.
-</p>
-
-<p>
-    With strong analytical thinking, attention to detail, and a continuous learning mindset, 
-  I am committed to developing my skills in data visualization, financial evaluation, 
-  and business process analysis. My goal is to bridge the gap between data and decision-making, 
-  helping organizations create measurable and sustainable impact.
-</p>
-</div>
-<!-- /About Section -->
-
-    <!-- Stats Section -->
-         <section id="stats" class="stats section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 justify-content-center">
-
-      <!-- Project Item 1 -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-bar-chart-line"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Data Analysis Projects</p>
-        </div>
-      </div><!-- End Project Item 1 -->
-
-      <!-- Project Item 2 -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-emoji-smile"></i>
-        <div class="stats-item">
-          <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Happy Clients</p>
-        </div>
-      </div><!-- End Project Item 2 -->
-
-    </div>
-
-  </div>
-
-</section>
-
+        <div class="col-lg-8 content text-justify">
+          <p class="fst-italic py-3">
+            A Management student with a strong interest in data-driven decision making, business strategy, and financial analysis.
+          </p>
+          <p>
+            I am currently a Management student with a deep interest in Data Analytics, Business Analysis,
+            and Financial Analysis. My academic background has equipped me with a solid understanding of
+            business fundamentals, strategic management, and financial concepts, which I continuously strengthen
+            through practical data analysis and real-world projects.
+          </p>
+          <p>
+            I am passionate about transforming raw data into meaningful insights that support strategic planning
+            and business growth. I enjoy analyzing datasets, identifying trends, evaluating financial performance,
+            and translating complex information into clear, actionable recommendations.
+            For me, data is not just numbers, it is a powerful tool to improve efficiency, reduce risks,
+            and enhance overall business performance.
+          </p>
+          <p>
+            With strong analytical thinking, attention to detail, and a continuous learning mindset,
+            I am committed to developing my skills in data visualization, financial evaluation,
+            and business process analysis. My goal is to bridge the gap between data and decision-making,
+            helping organizations create measurable and sustainable impact.
+          </p>
         </div>
 
       </div>
+    </section><!-- /About Section -->
 
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+
+          <!-- Data Analysis Projects -->
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-bar-chart-line"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Data Analysis Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- Certificates Earned -->
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-patch-check"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Certificates Earned</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- Scientific Writings -->
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-file-earmark-text"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Scientific Writings</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+      </div>
     </section><!-- /Stats Section -->
-
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
@@ -180,7 +185,6 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row skills-content skills-animation">
 
           <div class="col-lg-6">
@@ -188,14 +192,21 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
             <div class="progress">
               <span class="skill"><span>Excel</span> <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
               <span class="skill"><span>SQL</span> <i class="val">50%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Statistics</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
@@ -206,12 +217,12 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
             <div class="progress">
               <span class="skill"><span>Power BI</span> <i class="val">60%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Statistic</span> <i class="val">70%</i></span>
+              <span class="skill"><span>Financial Analysis</span> <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -227,7 +238,6 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
           </div>
 
         </div>
-
       </div>
 
     </section><!-- /Skills Section -->
@@ -241,108 +251,94 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
         <div><span>I'm</span> <span class="description-title">interested in</span></div>
       </div><!-- End Section Title -->
 
-     <section id="interests" class="interests section">
+      <div class="container">
+        <div class="row gy-4">
 
-  <div class="container">
+          <!-- DAX Language -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-bar-chart-steps" style="color: #ffbb2c;"></i>
+              <h3>DAX Language</h3>
+              <p>Formula language for Power BI data modeling & calculations.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-    <div class="row gy-4">
+          <!-- SQL -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-database" style="color: #5578ff;"></i>
+              <h3>SQL</h3>
+              <p>Querying and managing structured databases for data retrieval.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- DAX Language -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="features-item">
-          <i class="bi bi-bar-chart-steps" style="color: #ffbb2c;"></i>
-          <h3><a href="" class="stretched-link">DAX Language</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Automation -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-gear-wide-connected" style="color: #e80368;"></i>
+              <h3>Automation</h3>
+              <p>Streamlining repetitive tasks using Excel macros and scripting.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- SQL -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="features-item">
-          <i class="bi bi-database" style="color: #5578ff;"></i>
-          <h3><a href="" class="stretched-link">SQL</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Business Intelligence -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-pie-chart" style="color: #e361ff;"></i>
+              <h3>Business Intelligence</h3>
+              <p>Turning data into strategic insights for business decisions.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- Automation -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="features-item">
-          <i class="bi bi-gear-wide-connected" style="color: #e80368;"></i>
-          <h3><a href="" class="stretched-link">Automation</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Artificial Intelligence -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="features-item">
+              <i class="bi bi-cpu" style="color: #47aeff;"></i>
+              <h3>Artificial Intelligence (AI)</h3>
+              <p>Exploring AI applications in data evaluation and testing.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- Business Intelligence -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="features-item">
-          <i class="bi bi-pie-chart" style="color: #e361ff;"></i>
-          <h3><a href="" class="stretched-link">Business Intelligence</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Forecasting -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="features-item">
+              <i class="bi bi-graph-up-arrow" style="color: #ffa76e;"></i>
+              <h3>Forecasting</h3>
+              <p>Predicting future trends using historical data and statistical models.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- Artificial Intelligence -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="features-item">
-          <i class="bi bi-cpu" style="color: #47aeff;"></i>
-          <h3><a href="" class="stretched-link">Artificial Intelligence (AI)</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Data Visualization -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="features-item">
+              <i class="bi bi-bar-chart-line" style="color: #11dbcf;"></i>
+              <h3>Data Visualization</h3>
+              <p>Creating clear and interactive dashboards using Power BI & Excel.</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- Forecasting -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-        <div class="features-item">
-          <i class="bi bi-graph-up-arrow" style="color: #ffa76e;"></i>
-          <h3><a href="" class="stretched-link">Forecasting</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
+          <!-- Python Language -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="features-item">
+              <i class="bi bi-code-slash" style="color: #4233ff;"></i>
+              <h3>Python Language</h3>
+              <p>Learning Python for data manipulation and analysis (Pandas, NumPy).</p>
+            </div>
+          </div><!-- End Feature Item -->
 
-      <!-- Data Visualization -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-        <div class="features-item">
-          <i class="bi bi-bar-chart-line" style="color: #11dbcf;"></i>
-          <h3><a href="" class="stretched-link">Data Visualization</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
-
-      <!-- Python Language -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
-        <div class="features-item">
-          <i class="bi bi-code-slash" style="color: #4233ff;"></i>
-          <h3><a href="" class="stretched-link">Python Language</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
-
-      <!-- Exploratory Data Analysis (EDA) -->
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
-        <div class="features-item">
-          <i class="bi bi-search" style="color: #b20969;"></i>
-          <h3><a href="" class="stretched-link">Exploratory Data Analysis (EDA)</a></h3>
-        </div>
-      </div><!-- End Feature Item -->
-
-    </div>
-
-  </div>
-</section>
-
+          <!-- Exploratory Data Analysis -->
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
+            <div class="features-item">
+              <i class="bi bi-search" style="color: #b20969;"></i>
+              <h3>Exploratory Data Analysis (EDA)</h3>
+              <p>Uncovering patterns and anomalies before formal data modeling.</p>
+            </div>
           </div><!-- End Feature Item -->
 
         </div>
-
       </div>
 
     </section><!-- /Interests Section -->
-
-    <!-- Testimonials Section -->
-    
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
 
   </main>
 
@@ -358,10 +354,6 @@ Highly detail-oriented, adaptable, and driven to contribute to data analytics, b
           <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
