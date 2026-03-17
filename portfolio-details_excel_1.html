@@ -140,6 +140,18 @@
     .lang-content.visible > div > h4 {
       color: #fff !important;
     }
+
+    /* Re-override: text INSIDE cards must stay dark regardless of above rule */
+    .step-card p, .step-card ul, .step-card ol, .step-card li,
+    .step-card h5, .step-card h6, .step-card strong,
+    .insight-card p, .insight-card ul, .insight-card li,
+    .finding-card p, .finding-card ul, .finding-card li,
+    .content-card p, .content-card ul, .content-card li,
+    .highlight-box p, .highlight-box ul, .highlight-box li, .highlight-box strong,
+    .kpi-card p, .kpi-label,
+    .info-card p, .info-card .value, .info-card .label {
+      color: #212529 !important;
+    }
   </style>
 </head>
 
