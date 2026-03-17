@@ -64,6 +64,16 @@
     .finding-card h5 { color: #0078d4 !important; }
     /* Section title lines stay white (dark bg) but have accent border */
     .section-title-line { border-left: 4px solid #0078d4; padding-left: 12px; margin-bottom: 14px; }
+
+    /* Fix text outside cards on dark background */
+    .lang-content.visible > div > p,
+    .lang-content.visible > div > ul,
+    .lang-content.visible > div > ol,
+    .lang-content.visible > div > h2,
+    .lang-content.visible > div > h3,
+    .lang-content.visible > div > h4 {
+      color: #fff !important;
+    }
   </style>
 </head>
 <body class="portfolio-details-page">
