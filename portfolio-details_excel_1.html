@@ -3,17 +3,16 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZGDD97NR9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0ZGDD97NR9');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portofolio Details - Personal Bootstrap Template</title>
+  <title>Portofolio Details - Sales Order Analysis</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -24,7 +23,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,37 +35,86 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Language Toggle */
+    .lang-toggle-wrapper {
+      display: flex; align-items: center; gap: 4px;
+      background: #f1f3f5; border-radius: 50px; padding: 4px; width: fit-content;
+    }
+    .lang-btn {
+      border: none; background: transparent; border-radius: 50px;
+      padding: 6px 18px; font-size: 0.85rem; font-weight: 600;
+      cursor: pointer; color: #6c757d; transition: all 0.2s ease;
+    }
+    .lang-btn.active { background: #1d6f42; color: #fff; box-shadow: 0 2px 8px rgba(29,111,66,0.3); }
+    .lang-btn:hover:not(.active) { background: #dee2e6; color: #212529; }
+    .lang-content { display: none; }
+    .lang-content.visible { display: block; }
+    span.lang-content.visible { display: inline; }
+
+    /* Content Styling */
+    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; }
+    .step-card {
+      background: #f8f9fa; border-radius: 10px;
+      border-left: 4px solid #1d6f42; padding: 20px 24px; margin-bottom: 28px;
+    }
+    .step-badge {
+      background: #1d6f42; color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      padding: 3px 12px; border-radius: 20px;
+      display: inline-block; margin-bottom: 10px;
+    }
+    .formula-box {
+      background: #212529; color: #f8f9fa;
+      border-radius: 8px; padding: 16px 20px;
+      font-family: monospace; font-size: 0.88rem;
+      margin: 12px 0; white-space: pre-wrap;
+    }
+    .insight-card {
+      background: #fff; border: 1px solid #dee2e6;
+      border-radius: 8px; padding: 16px 20px; margin-bottom: 14px;
+    }
+    .insight-card h5 { color: #1d6f42; margin-bottom: 6px; }
+    .highlight-box {
+      background: #d1e7dd; border-left: 4px solid #1d6f42;
+      border-radius: 6px; padding: 14px 18px;
+      font-size: 0.93rem; color: #212529 !important;
+    }
+    .info-card {
+      background: #f8f9fa; border-left: 4px solid #1d6f42;
+      border-radius: 6px; padding: 12px 16px; margin-bottom: 10px;
+    }
+    .info-card .label {
+      font-size: 0.75rem; color: #6c757d;
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
+    }
+    .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529; }
+    .excel-hero {
+      background: linear-gradient(135deg, #1d6f4218, #1d6f4208);
+      border-radius: 12px; display: flex; align-items: center;
+      justify-content: center; height: 180px; margin-bottom: 24px;
+    }
+    .excel-hero i { font-size: 5rem; color: #1d6f42; opacity: 0.7; }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Portofolio</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="Portfolio.html" class="active">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
@@ -79,7 +127,10 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portofolio Details</h1>
-              <p class="mb-0">Sales order analysis project focusing on order trends, top transactions, and salesperson performance using Microsoft Excel.</p>
+              <p class="mb-0">
+                <span class="lang-content visible" data-lang="en">Sales order analysis project focusing on order trends, top transactions, and salesperson performance using Microsoft Excel.</span>
+                <span class="lang-content" data-lang="id">Proyek analisis sales order berfokus pada tren pesanan, transaksi terbesar, dan kinerja salesperson menggunakan Microsoft Excel.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -88,6 +139,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
             <li class="current">Portofolio Details</li>
           </ol>
         </div>
@@ -95,367 +147,409 @@
     </div><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
-   
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span style="font-size:0.85rem; color:#6c757d; font-weight:500;">
+            <i class="bi bi-translate me-1"></i>Language / Bahasa:
+          </span>
+          <div class="lang-toggle-wrapper">
+            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+
+          <!-- LEFT SIDEBAR -->
+          <div class="col-lg-3">
+            <div class="excel-hero">
+              <i class="bi bi-file-earmark-spreadsheet"></i>
+            </div>
+
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="en">Category</span><span class="lang-content" data-lang="id">Kategori</span></div>
+              <div class="value">Excel</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tools me-1"></i><span class="lang-content visible" data-lang="en">Tools</span><span class="lang-content" data-lang="id">Alat</span></div>
+              <div class="value">Microsoft Excel</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-bar-chart me-1"></i><span class="lang-content visible" data-lang="en">Technique</span><span class="lang-content" data-lang="id">Teknik</span></div>
+              <div class="value">Array Formula, SUMPRODUCT, INDEX-MATCH</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-database me-1"></i><span class="lang-content visible" data-lang="en">Data Size</span><span class="lang-content" data-lang="id">Ukuran Data</span></div>
+              <div class="value">800 <span class="lang-content visible" data-lang="en">records</span><span class="lang-content" data-lang="id">rekaman</span></div>
+            </div>
+
+            <div class="mt-3">
+              <a href="portfolio.html" class="btn btn-outline-secondary w-100">
+                <i class="bi bi-arrow-left me-2"></i>
+                <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
+                <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
+              </a>
             </div>
           </div>
 
-        </div>
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-9">
 
-      </div>
+            <!-- ===== ENGLISH ===== -->
+            <div class="lang-content visible" data-lang="en">
 
-    </section><!-- /Portfolio Details Section -->
-     <!-- PROJECT TITLE -->
-    <div class="row mb-4">
-      <div class="col-lg-12 text-center">
-        <h1>Sales Order Analysis using Excel</h1>
-        
-      </div>
-    </div>
+              <h2 class="fw-bold mb-1">Sales Order Analysis & Summary Dashboard</h2>
+              <hr class="mb-4">
 
-    <!-- PROJECT OVERVIEW -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Project Overview</h3>
-        <p>
-          This project analyzes sales order data to extract meaningful insights related to top-value transactions, order volume by year, and total sales performance based on salesperson name initials. The analysis was conducted entirely using Microsoft Excel with advanced formulas and conditional logic.
-        </p>
-      </div>
-    </div>
-    <img src="assets/img/portfolio/porto-excel-1-1.png" 
-     alt="Tabel Of Sales"
-     class="img-fluid d-block mx-auto my-4">
+              <!-- Project Overview -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Project Overview</h4>
+                <p>
+                  This project analyzes sales order data to extract meaningful insights related to top-value transactions,
+                  order volume by year, and total sales performance based on salesperson name initials.
+                  The analysis was conducted entirely using Microsoft Excel with advanced formulas and conditional logic.
+                </p>
+              </div>
 
-    <!-- OBJECTIVES -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Objectives</h3>
-        <ul>
-          <li>Identify the top two highest-value orders for each salesperson</li>
-          <li>Calculate the total number of orders for specific years</li>
-          <li>Analyze total sales based on salesperson initials and selected years</li>
-        </ul>
-      </div>
-    </div>
+              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Table of Sales" class="img-fluid rounded shadow d-block mx-auto mb-5" style="max-width:100%;">
 
-    <!-- STEP BY STEP PROCESS -->
-    <div class="row mb-5">
-      <div class="col-lg-12 text-center">
-        <h3>Step-by-Step Analysis Process</h3>
-        </div>
-      </div>
+              <!-- Objectives -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Objectives</h4>
+                <ul>
+                  <li>Identify the top two highest-value orders for each salesperson</li>
+                  <li>Calculate the total number of orders for specific years</li>
+                  <li>Analyze total sales based on salesperson initials and selected years</li>
+                </ul>
+              </div>
 
-        <!-- STEP 1 -->
-        <h5 class="mt-4"><strong>Step 1 – Order IDs for Top Two Orders per Salesperson</strong></h5>
-        <p>
-          The first analysis identifies the Order IDs corresponding to the top two
-          highest order amounts for each salesperson.
-        </p>
+              <!-- Step-by-Step -->
+              <h4 class="section-title-line mb-4">Step-by-Step Analysis Process</h4>
 
-        <h5><strong>Excel Formulas</strong></h5>
-         <pre><code>
-=IFERROR(
+              <!-- Step 1 -->
+              <div class="step-card">
+                <span class="step-badge">Step 1</span>
+                <h5 class="fw-bold">Order IDs for Top Two Orders per Salesperson</h5>
+                <p>The first analysis identifies the Order IDs corresponding to the top two highest order amounts for each salesperson.</p>
+                <p><strong>Excel Formula:</strong></p>
+                <div class="formula-box">=IFERROR(
   INDEX($E$3:$E$801,
     MATCH(
-      LARGE((I4=$C$3:$C$801)*$F$3:$F$801,ROW(A1)),
-      $F$3:$F$801,0) ),"-")
-        </code></pre>
-        
-<div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-1-2.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-</div>
+      LARGE((I4=$C$3:$C$801)*$F$3:$F$801, ROW(A1)),
+      $F$3:$F$801, 0)
+  ), "-")</div>
+                <img src="assets/img/portfolio/porto-excel-1-2.png" alt="Step 1 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
+                <ul>
+                  <li><strong>(I4 = $C$3:$C$801)</strong> — Filters the dataset to only include records matching the selected salesperson.</li>
+                  <li><strong>* $F$3:$F$801</strong> — Multiplies filtered results with order amounts, retaining only relevant sales values.</li>
+                  <li><strong>LARGE(..., ROW(A1))</strong> — Extracts the 1st and 2nd largest order values dynamically.</li>
+                  <li><strong>MATCH(...)</strong> — Identifies the exact position of the selected order amounts in the dataset.</li>
+                  <li><strong>INDEX(...)</strong> — Returns the corresponding Order ID based on the matched position.</li>
+                  <li><strong>IFERROR()</strong> — Prevents errors when fewer than two orders exist for a salesperson.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Outcome:</strong> Successfully identified the top two highest-value transactions for each salesperson, enabling quick recognition of high-impact sales.
+                </div>
+              </div>
 
+              <!-- Step 2 -->
+              <div class="step-card">
+                <span class="step-badge">Step 2</span>
+                <h5 class="fw-bold">Total Number of Orders by Year</h5>
+                <p>The second analysis calculates the total number of orders for specific years based on the order date.</p>
+                <p><strong>Excel Formula:</strong></p>
+                <div class="formula-box">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</div>
+                <img src="assets/img/portfolio/porto-excel-1-3.png" alt="Step 2 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
+                <ul>
+                  <li><strong>YEAR(Order_Date)</strong> — Extracts the year from each order date.</li>
+                  <li><strong>=H12</strong> — Filters orders by the selected year.</li>
+                  <li><strong>SUMPRODUCT(--())</strong> — Converts TRUE/FALSE results into numeric counts.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Outcome:</strong> Generated a clear comparison of order volume across different years, highlighting fluctuations in sales activity over time.
+                </div>
+              </div>
 
-
-         <h4><strong>Explanation (Step by Step)</strong></h4>
-
-
-  <div class="mb-3">
-    <p><strong>(I4 = $C$3:$C$801)</strong></p>
-    <p>
-       → Filters the dataset to only include records that match the selected salesperson.
-    </p>
-  </div>
-
-  <div class="mb-3">
-    <p><strong>* $F$3:$F$801</strong></p>
-    <p>
-       → Multiplies the filtered results with the order amounts, keeping only the 
-      relevant sales values for that salesperson.
-    </p>
-  </div>
-
-  <div class="mb-3">
-    <p><strong>LARGE(..., ROW(A1))</strong></p>
-    <p>
-       → Extracts the largest and second largest order values dynamically.
-      The ROW function allows ranking (1st largest, 2nd largest).
-    </p>
-  </div>
-
-  <div class="mb-3">
-    <p><strong>MATCH(...)</strong></p>
-    <p>
-       → Identifies the exact position of the selected order amounts within the dataset.
-    </p>
-  </div>
-
-  <div class="mb-3">
-    <p><strong>INDEX(...)</strong></p>
-    <p>
-       → Returns the corresponding Order ID based on the matched position.
-    </p>
-  </div>
-
-  <div>
-    <p><strong>IFERROR()</strong></p>
-    <p>
-       → Prevents formula errors by returning a placeholder value when fewer than 
-      two orders exist for a salesperson.
-    </p>
-  </div>
-
-</section>
-
- <h5><strong>Outcome</strong></h5>
-        <p class="mb-4">
-          Successfully identified the top two highest-value transactions for each salesperson,
-          enabling quick recognition of high-impact sales.
-        </p>
-
-       
-         
-
-        <!-- STEP 2 -->
-        <h5 class="mt-4"><strong>Step 2 – Total Number of Orders by Year</strong></h5>
-        <p>
-          The second analysis calculates the total number of orders for specific years
-          based on the order date.
-        </p>
-
-        <h5><strong>Excel Formulas</strong></h5>
-        <pre><code>
-=SUMPRODUCT(--(YEAR(Order_Date)=H12))
-        </code></pre>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-1-3.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-</div>
-       <h4><strong>Explanation (Step by Step)</strong></h4>
-
-
-  <div class="mb-3">
-    <p><strong>YEAR(Order_Date)</strong></p>
-    <p> 
-      → Extracts the year from each order date
-    </p>
-  </div>
-
-   <div class="mb-3">
-    <p><strong>=H12</strong></p>
-    <p> 
-      → Filters orders by the selected year.
-    </p>
-  </div>
-  
-   <div class="mb-3">
-    <p><strong>SUMPRODUCT(--())</strong></p>
-    <p> 
-      → Converts TRUE/FALSE results into numeric counts.
-    </p>
-  </div>
-
-  <h5><strong>Outcome</strong></h5>
-        <p class="mb-4">
-          Generated a clear comparison of order volume across different years,
-          highlighting fluctuations in sales activity over time.
-        </p>
-
-
-
-
-        <!-- STEP 3 -->
-          <h5 class="mt-4"><strong>Step 3 – Total Sales by Salesperson Initial and Year</strong></h5>
-        <p>
-          The final analysis calculates total sales amounts for salespeople whose names
-          start with a specific letter in selected years.
-        </p>
-        <h5><strong>Excel Formulas</strong></h5>
-        <pre><code>
-=SUMPRODUCT(
+              <!-- Step 3 -->
+              <div class="step-card">
+                <span class="step-badge">Step 3</span>
+                <h5 class="fw-bold">Total Sales by Salesperson Initial and Year</h5>
+                <p>The final analysis calculates total sales amounts for salespeople whose names start with a specific letter in selected years.</p>
+                <p><strong>Excel Formula:</strong></p>
+                <div class="formula-box">=SUMPRODUCT(
   --(LEFT(Salesperson,1)=$H20),
   --(YEAR(Order_Date)=I$19),
-  Order_Amount)
-        </code></pre>
+  Order_Amount)</div>
+                <img src="assets/img/portfolio/porto-excel-1-4.png" alt="Step 3 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
+                <ul>
+                  <li><strong>LEFT(Salesperson,1)</strong> — Extracts the first letter of each salesperson's name.</li>
+                  <li><strong>=$H20</strong> — Filters by the selected initial (e.g., C, L, S).</li>
+                  <li><strong>YEAR(Order_Date)=I$19</strong> — Filters by year.</li>
+                  <li><strong>SUMPRODUCT()</strong> — Sums the order amounts that meet all conditions.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Outcome:</strong> Enabled grouped performance analysis based on salesperson initials and yearly trends.
+                </div>
+              </div>
 
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-1-4.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-</div>
-         <h4><strong>Explanation (Step by Step)</strong></h4>
+              <!-- Results & Insights -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Results & Insights</h4>
 
-      <div class="mb-3">
-    <p><strong>LEFT(Salesperson,1)</strong></p>
-    <p> 
-      → Extracts the first letter of each salesperson’s name
-    </p>
-  </div>
+                <h5 class="fw-bold mt-3">Top Two Orders per Salesperson</h5>
+                <p>The analysis successfully identified the top two highest-value orders for each salesperson. Salespeople such as Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, and Suyama recorded two significant high-value orders. Meanwhile, King and Peacock did not have qualifying top-ranked orders in the dataset, indicating either lower transaction values or limited order activity during the observed period.</p>
 
-  <div class="mb-3">
-    <p><strong>=H20</strong></p>
-    <p> 
-      → Filters by the selected initial (e.g., C, L, S).
-    </p>
-  </div>
+                <h5 class="fw-bold mt-3">Number of Orders by Year</h5>
+                <p>The total number of orders per year shows noticeable fluctuation:</p>
+                <ol>
+                  <li><strong>2004 → 399 orders</strong> (Highest)</li>
+                  <li>2005 → 257 orders</li>
+                  <li>2003 → 143 orders (Lowest)</li>
+                </ol>
+                <p>There was a significant increase from 2003 to 2004, followed by a decline in 2005.</p>
 
- <div class="mb-3">
-    <p><strong>YEAR(Order_Date)=I$19</strong></p>
-    <p> 
-      → Filters by year.
-    </p>
-  </div>
+                <h5 class="fw-bold mt-3">Total Sales by Initial Letter of Salesperson</h5>
+                <p>Sales performance grouped by the first letter of salesperson names:</p>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2003</h5>
+                      <p>C → $34,392.86<br><strong>L → $69,169.07 ⭐</strong><br>S → $14,519.68</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2004</h5>
+                      <p>C → $116,781.21<br><strong>L → $235,384.63 ⭐</strong><br>S → $40,826.37</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2005</h5>
+                      <p>C → $88,821.59<br><strong>L → $130,416.25 ⭐</strong><br>S → $17,181.58</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Across all years, salespeople whose names start with <strong>"L"</strong> consistently generated the highest total sales.</p>
+              </div>
 
-  <div class="mb-3">
-    <p><strong>SUMPRODUCT()</strong></p>
-    <p> 
-      → Sums the order amounts that meet all conditions.
-    </p>
-  </div>
+              <!-- Key Insights -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Key Insights</h4>
+                <div class="insight-card"><h5>1. Peak Operational Year: 2004</h5><p>2004 recorded the highest number of transactions (399 orders), indicating strong operational activity and market demand during that year.</p></div>
+                <div class="insight-card"><h5>2. Sales Contribution Concentration</h5><p>Sales performance is heavily concentrated among specific individuals. The <strong>"L" group</strong> dominates total sales in all observed years.</p></div>
+                <div class="insight-card"><h5>3. Performance Disparity</h5><p>The gap between groups is significant. In 2004, the <strong>"L"</strong> group generated more than <strong>5x</strong> the revenue of the <strong>"S"</strong> group.</p></div>
+                <div class="insight-card"><h5>4. Strategic Implication</h5><ul><li>Sales performance evaluation</li><li>Incentive program design</li><li>Targeted coaching for lower-performing groups</li><li>Resource allocation planning</li></ul></div>
+                <div class="insight-card"><h5>5. Data-Driven Monitoring</h5><p>The use of advanced Excel formulas such as Array Formulas and <strong>SUMPRODUCT</strong> enables scalable performance tracking for future datasets without manual filtering.</p></div>
+              </div>
 
-   <h5><strong>Outcome</strong></h5>
-        <p class="mb-4">
-          Enabled grouped performance analysis based on salesperson initials
-          and yearly trends.
-        </p>
+              <!-- Business Value -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Business Value</h4>
+                <p>This analysis helps management quickly identify top-performing sales transactions, monitor yearly trends, and evaluate grouped sales performance. The approach reduces manual reporting and supports data-driven decision making.</p>
+              </div>
 
+              <!-- Tools -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Tools & Skills Used</h4>
+                <ul>
+                  <li>Microsoft Excel</li>
+                  <li>Array formulas & SUMPRODUCT</li>
+                  <li>Date and text-based data filtering</li>
+                  <li>Analytical problem-solving</li>
+                </ul>
+              </div>
 
-    <!-- RESULTS & INSIGHTS -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Results & Insights</h3>
-          <h4>Results</h4>
-          <h5>Top Two Orders per Salesperson</h5>
-          <p>The analysis successfully identified the top two highest-value orders for each salesperson. 
-            Salespeople such as Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, and Suyama recorded two significant high-value orders. 
-            
-            Meanwhile, King and Peacock did not have qualifying top-ranked orders in the dataset, indicating either lower transaction values or limited order activity during the observed period.
+            </div>
+            <!-- ===== END ENGLISH ===== -->
 
-This ranking provides a clear comparison of individual sales impact based on transaction value.</p>
-          <h5>Number of Orders by Year</h5> 
-          <p>The total number of orders per year shows a noticeable fluctuation:
-<ol>
-<li>2004 → 399 orders (Highest)</li>
-<li>2005 → 257 orders</li>
-<li>2003 → 143 orders (Lowest)</li>
+            <!-- ===== BAHASA INDONESIA ===== -->
+            <div class="lang-content" data-lang="id">
 
-</ol>
+              <h2 class="fw-bold mb-1">Analisis Sales Order & Dashboard Ringkasan</h2>
+              <hr class="mb-4">
 
+              <!-- Project Overview -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Gambaran Proyek</h4>
+                <p>
+                  Proyek ini menganalisis data sales order untuk menghasilkan wawasan bermakna terkait transaksi bernilai tertinggi,
+                  volume pesanan per tahun, dan kinerja penjualan berdasarkan inisial nama salesperson.
+                  Analisis dilakukan sepenuhnya menggunakan Microsoft Excel dengan rumus lanjutan dan logika kondisional.
+                </p>
+              </div>
 
-There was a significant increase from 2003 to 2004, followed by a decline in 2005.</p>
-         <h5>Total Sales by Initial Letter of Salesperson</h5>
-          <p>Sales performance grouped by the first letter of salesperson names shows the following:
-  <p>1. 2004</p>
-   <p>C → $116,781.21</p>
-   <p><strong>L →  $235,384.63 (Highest)</strong></p>
-   <p>S → $40,826.37</p>
+              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Tabel Penjualan" class="img-fluid rounded shadow d-block mx-auto mb-5" style="max-width:100%;">
 
-   <p>2. 2005</p>
-   <p>C → $88,821.59</p>
-   <p><strong>L → $130,416.25 (Highest)</strong></p>
-   <p>S → $17,181.58</p>
+              <!-- Objectives -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Tujuan Analisis</h4>
+                <ul>
+                  <li>Mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson</li>
+                  <li>Menghitung total jumlah pesanan untuk tahun tertentu</li>
+                  <li>Menganalisis total penjualan berdasarkan inisial nama salesperson dan tahun yang dipilih</li>
+                </ul>
+              </div>
 
-   <p>3. 2003</p>
-   <p>C → $34,392.86</p>
-   <p><strong>L → $69,169.07 (Highest)</strong></p>
-   <p>S → $14,519.68</p>
-  
+              <!-- Step-by-Step -->
+              <h4 class="section-title-line mb-4">Proses Analisis Langkah demi Langkah</h4>
 
-Across all years, salespeople whose names start with "L" consistently generated the highest total sales.</p>
+              <!-- Step 1 -->
+              <div class="step-card">
+                <span class="step-badge">Langkah 1</span>
+                <h5 class="fw-bold">Order ID untuk Dua Pesanan Teratas per Salesperson</h5>
+                <p>Analisis pertama mengidentifikasi Order ID yang berhubungan dengan dua nilai pesanan tertinggi untuk setiap salesperson.</p>
+                <p><strong>Rumus Excel:</strong></p>
+                <div class="formula-box">=IFERROR(
+  INDEX($E$3:$E$801,
+    MATCH(
+      LARGE((I4=$C$3:$C$801)*$F$3:$F$801, ROW(A1)),
+      $F$3:$F$801, 0)
+  ), "-")</div>
+                <img src="assets/img/portfolio/porto-excel-1-2.png" alt="Hasil Langkah 1" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
+                <ul>
+                  <li><strong>(I4 = $C$3:$C$801)</strong> — Memfilter dataset agar hanya mencakup data yang cocok dengan salesperson yang dipilih.</li>
+                  <li><strong>* $F$3:$F$801</strong> — Mengalikan hasil filter dengan nilai pesanan, hanya menyimpan nilai penjualan yang relevan.</li>
+                  <li><strong>LARGE(..., ROW(A1))</strong> — Mengambil nilai pesanan terbesar pertama dan kedua secara dinamis.</li>
+                  <li><strong>MATCH(...)</strong> — Mengidentifikasi posisi tepat dari nilai pesanan yang dipilih dalam dataset.</li>
+                  <li><strong>INDEX(...)</strong> — Mengembalikan Order ID yang sesuai berdasarkan posisi yang ditemukan.</li>
+                  <li><strong>IFERROR()</strong> — Mencegah error ketika salesperson memiliki kurang dari dua pesanan.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Hasil:</strong> Berhasil mengidentifikasi dua transaksi bernilai tertinggi untuk setiap salesperson, memungkinkan pengenalan cepat terhadap penjualan berdampak tinggi.
+                </div>
+              </div>
 
-<h4>Insight</h4>
-  <h5> 1. Peak Operational Year: 2004</h5>
-    <p>
-      2004 recorded the highest number of transactions (399 orders), indicating 
-      strong operational activity and market demand during that year.
-    </p>
-  </div>
+              <!-- Step 2 -->
+              <div class="step-card">
+                <span class="step-badge">Langkah 2</span>
+                <h5 class="fw-bold">Total Jumlah Pesanan per Tahun</h5>
+                <p>Analisis kedua menghitung total jumlah pesanan untuk tahun tertentu berdasarkan tanggal pesanan.</p>
+                <p><strong>Rumus Excel:</strong></p>
+                <div class="formula-box">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</div>
+                <img src="assets/img/portfolio/porto-excel-1-3.png" alt="Hasil Langkah 2" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
+                <ul>
+                  <li><strong>YEAR(Order_Date)</strong> — Mengekstrak tahun dari setiap tanggal pesanan.</li>
+                  <li><strong>=H12</strong> — Memfilter pesanan berdasarkan tahun yang dipilih.</li>
+                  <li><strong>SUMPRODUCT(--())</strong> — Mengubah hasil TRUE/FALSE menjadi hitungan numerik.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Hasil:</strong> Menghasilkan perbandingan volume pesanan yang jelas antar tahun, menyoroti fluktuasi aktivitas penjualan dari waktu ke waktu.
+                </div>
+              </div>
 
-  <div class="mb-4">
-    <h5> 2. Sales Contribution Concentration</h5>
-    <p>
-      Sales performance is heavily concentrated among specific individuals and 
-      name groups. The <strong>“L” group</strong> dominates total sales in all observed years.
-    </p>
-  </div>
+              <!-- Step 3 -->
+              <div class="step-card">
+                <span class="step-badge">Langkah 3</span>
+                <h5 class="fw-bold">Total Penjualan berdasarkan Inisial Salesperson dan Tahun</h5>
+                <p>Analisis terakhir menghitung total penjualan untuk salesperson yang namanya diawali huruf tertentu pada tahun yang dipilih.</p>
+                <p><strong>Rumus Excel:</strong></p>
+                <div class="formula-box">=SUMPRODUCT(
+  --(LEFT(Salesperson,1)=$H20),
+  --(YEAR(Order_Date)=I$19),
+  Order_Amount)</div>
+                <img src="assets/img/portfolio/porto-excel-1-4.png" alt="Hasil Langkah 3" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
+                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
+                <ul>
+                  <li><strong>LEFT(Salesperson,1)</strong> — Mengambil huruf pertama dari nama setiap salesperson.</li>
+                  <li><strong>=$H20</strong> — Memfilter berdasarkan inisial yang dipilih (misal: C, L, S).</li>
+                  <li><strong>YEAR(Order_Date)=I$19</strong> — Memfilter berdasarkan tahun.</li>
+                  <li><strong>SUMPRODUCT()</strong> — Menjumlahkan nilai pesanan yang memenuhi semua kondisi.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <strong>Hasil:</strong> Memungkinkan analisis kinerja berkelompok berdasarkan inisial salesperson dan tren tahunan.
+                </div>
+              </div>
 
-  <div class="mb-4">
-    <h5> 3. Performance Disparity</h5>
-    <p>
-      The gap between the highest and lowest contributing groups is significant. 
-      For example, in 2004, the <strong>"L"</strong> group generated more than 
-      <strong>5x</strong> the revenue of the <strong>"S"</strong> group.
-    </p>
-  </div>
+              <!-- Results & Insights -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Hasil & Wawasan</h4>
 
-  <div class="mb-4">
-    <h5> 4. Strategic Implication</h5>
-    <ul>
-      <li>Sales performance evaluation</li>
-      <li>Incentive program design</li>
-      <li>Targeted coaching for lower-performing groups</li>
-      <li>Resource allocation planning</li>
-    </ul>
-  </div>
+                <h5 class="fw-bold mt-3">Dua Pesanan Teratas per Salesperson</h5>
+                <p>Analisis berhasil mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson. Salesperson seperti Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, dan Suyama mencatatkan dua pesanan bernilai signifikan. Sementara itu, King dan Peacock tidak memiliki pesanan peringkat teratas dalam dataset, mengindikasikan nilai transaksi yang lebih rendah atau aktivitas pesanan yang terbatas.</p>
 
-  <div>
-    <h5> 5. Data-Driven Monitoring</h5>
-    <p>
-      The use of advanced Excel formulas such as Array Formulas and 
-      <strong>SUMPRODUCT</strong> enables scalable performance tracking for future datasets 
-      without manual filtering.
-    </p>
-  </div>
+                <h5 class="fw-bold mt-3">Jumlah Pesanan per Tahun</h5>
+                <p>Total jumlah pesanan per tahun menunjukkan fluktuasi yang mencolok:</p>
+                <ol>
+                  <li><strong>2004 → 399 pesanan</strong> (Tertinggi)</li>
+                  <li>2005 → 257 pesanan</li>
+                  <li>2003 → 143 pesanan (Terendah)</li>
+                </ol>
+                <p>Terjadi peningkatan signifikan dari 2003 ke 2004, diikuti penurunan pada 2005.</p>
 
-</section>
-        
-      </div>
-    </div>
+                <h5 class="fw-bold mt-3">Total Penjualan berdasarkan Inisial Salesperson</h5>
+                <p>Kinerja penjualan yang dikelompokkan berdasarkan huruf pertama nama salesperson:</p>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2003</h5>
+                      <p>C → $34,392.86<br><strong>L → $69,169.07 ⭐</strong><br>S → $14,519.68</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2004</h5>
+                      <p>C → $116,781.21<br><strong>L → $235,384.63 ⭐</strong><br>S → $40,826.37</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="insight-card">
+                      <h5>2005</h5>
+                      <p>C → $88,821.59<br><strong>L → $130,416.25 ⭐</strong><br>S → $17,181.58</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Di semua tahun, salesperson dengan nama berinisial <strong>"L"</strong> secara konsisten menghasilkan total penjualan tertinggi.</p>
+              </div>
 
-    <!-- BUSINESS VALUE -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Business Value</h3>
-        <p>
-          This analysis helps management quickly identify top-performing sales
-          transactions, monitor yearly trends, and evaluate grouped sales performance.
-          The approach reduces manual reporting and supports data-driven decision making.
-        </p>
-      </div>
-    </div>
+              <!-- Key Insights -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Insight Utama</h4>
+                <div class="insight-card"><h5>1. Tahun Operasional Puncak: 2004</h5><p>Tahun 2004 mencatat jumlah transaksi tertinggi (399 pesanan), menunjukkan aktivitas operasional dan permintaan pasar yang kuat pada tahun tersebut.</p></div>
+                <div class="insight-card"><h5>2. Konsentrasi Kontribusi Penjualan</h5><p>Kinerja penjualan sangat terkonsentrasi pada individu tertentu. Kelompok <strong>"L"</strong> mendominasi total penjualan di semua tahun yang diamati.</p></div>
+                <div class="insight-card"><h5>3. Kesenjangan Kinerja</h5><p>Selisih antar kelompok sangat signifikan. Pada 2004, kelompok <strong>"L"</strong> menghasilkan lebih dari <strong>5x</strong> pendapatan kelompok <strong>"S"</strong>.</p></div>
+                <div class="insight-card"><h5>4. Implikasi Strategis</h5><ul><li>Evaluasi kinerja penjualan</li><li>Desain program insentif</li><li>Pelatihan terarah untuk kelompok berkinerja rendah</li><li>Perencanaan alokasi sumber daya</li></ul></div>
+                <div class="insight-card"><h5>5. Pemantauan Berbasis Data</h5><p>Penggunaan rumus Excel lanjutan seperti Array Formula dan <strong>SUMPRODUCT</strong> memungkinkan pelacakan kinerja yang skalabel untuk dataset masa depan tanpa filter manual.</p></div>
+              </div>
 
-    <!-- TOOLS -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h3>Tools & Skills Used</h3>
-        <ul>
-          <li>Microsoft Excel</li>
-          <li>Array formulas & SUMPRODUCT</li>
-          <li>Date and text-based data filtering</li>
-          <li>Analytical problem-solving</li>
-        </ul>
-      </div>
-    </div>
+              <!-- Business Value -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Nilai Bisnis</h4>
+                <p>Analisis ini membantu manajemen mengidentifikasi transaksi penjualan terbaik dengan cepat, memantau tren tahunan, dan mengevaluasi kinerja penjualan berkelompok. Pendekatan ini mengurangi pelaporan manual dan mendukung pengambilan keputusan berbasis data.</p>
+              </div>
 
-  </div>
-</section>
- <!-- end-->
+              <!-- Tools -->
+              <div class="mb-4">
+                <h4 class="section-title-line">Alat & Skill yang Digunakan</h4>
+                <ul>
+                  <li>Microsoft Excel</li>
+                  <li>Array Formula & SUMPRODUCT</li>
+                  <li>Filter data berbasis tanggal dan teks</li>
+                  <li>Pemecahan masalah analitis</li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- ===== END BAHASA INDONESIA ===== -->
+
+          </div><!-- end col-lg-9 -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
@@ -470,21 +564,13 @@ Across all years, salespeople whose names start with "L" consistently generated 
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -498,10 +584,17 @@ Across all years, salespeople whose names start with "L" consistently generated 
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <script>
+    function switchLang(lang) {
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+      document.querySelectorAll('.lang-content').forEach(function(el) {
+        el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+      });
+    }
+  </script>
 
+</body>
 </html>
