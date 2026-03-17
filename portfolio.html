@@ -36,6 +36,43 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Badge status Published / Unpublished */
+    .badge-published {
+      background-color: #198754;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    .badge-unpublished {
+      background-color: #6c757d;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    /* Scientific writing card thumbnail */
+    .scientific-thumb {
+      background: linear-gradient(135deg, #0d6efd22, #0d6efd11);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .scientific-thumb i {
+      font-size: 5rem;
+      color: #0d6efd;
+      opacity: 0.7;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Personal
   * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -51,21 +88,19 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Portofolio</h1>
       </a>
 
-     <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="Portfolio.html" class="active">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="Portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
   </header>
@@ -107,36 +142,38 @@
             <li data-filter=".filter-powerbi">Power BI</li>
             <li data-filter=".filter-branding">Branding</li>
             <li data-filter=".filter-books">Books</li>
-            
+            <li data-filter=".filter-scientific">Scientific Writing</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+            <!-- Excel Item 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Excel">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Excel</h4>
                   <p>Sales Order Analysis & Summary Dashboard</p>
-                  <a href="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" title="Excel " data-gallery="portfolio-gallery-Excel" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" title="Excel" data-gallery="portfolio-gallery-Excel" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details_excel_1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
+
+            <!-- Excel Item 2 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Excel">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>Excel</h4>
                   <p>Consumer Behavior & Sales Performance Analysis: 2019 Supermarket Case Study</p>
-                  <a href="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" title="Excel " data-gallery="portfolio-gallery-Excel" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/Microsoft_Office_Excel_Logo_512px.png" title="Excel" data-gallery="portfolio-gallery-Excel" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="portfolio-details_excel_2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            <!-- End Portfolio Item -->
-           
-            
             </div><!-- End Portfolio Item -->
+
+            <!-- Power BI Item 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/microsoft_power_bi-logo_brandlogos.net_1gwgj-768x1001.png" class="img-fluid" alt="">
@@ -147,9 +184,9 @@
                   <a href="portfolio-details_Power-BI_1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-              </div>
-            <!-- End Portfolio Item -->
+            </div><!-- End Portfolio Item -->
 
+            <!-- Power BI Item 2 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/microsoft_power_bi-logo_brandlogos.net_1gwgj-768x1001.png" class="img-fluid" alt="">
@@ -160,9 +197,41 @@
                   <a href="portfolio-details_Power-BI_2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-              </div>
-            <!-- End Portfolio Item -->
+            </div><!-- End Portfolio Item -->
 
+            <!-- ===== SCIENTIFIC WRITING Item 1 ===== -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-scientific">
+              <div class="portfolio-content h-100">
+                <!-- Thumbnail ikon dokumen -->
+                <div class="scientific-thumb">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Scientific Writing</h4>
+                  <p>Analisis Likuiditas Dan Rentabilitas Terhadap Laba Perusahaan Pada PT Phapros Tbk</p>
+                  <span class="badge-unpublished">Unpublished</span>
+                  <a href="https://drive.google.com/file/d/14dABaestqarQr2Xtx80n4qQc-19iuvfn/view?usp=drive_link" title="View Paper" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details_scientific_1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- ===== SCIENTIFIC WRITING Item 2 ===== -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-scientific">
+              <div class="portfolio-content h-100">
+                <!-- Thumbnail ikon dokumen -->
+                <div class="scientific-thumb">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div class="portfolio-info">
+                  <h4>Scientific Writing</h4>
+                  <p>Analisis Rasio Likuiditas dan Profitabilitas PT Akasha Wira Internasional Tbk. Periode 2021-2024</p>
+                  <span class="badge-published">Published</span>
+                  <a href="https://j-las.lemkomindo.org/index.php/AFoSJ-LAS/article/view/1313" title="View Paper" target="_blank" class="preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details_scientific_2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
           </div><!-- End Portfolio Container -->
 
@@ -186,10 +255,6 @@
           <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
