@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZGDD97NR9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0ZGDD97NR9');</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portofolio Details - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
+  <title>Portofolio Details - Supermarket Case Study</title>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .lang-toggle-wrapper{display:flex;align-items:center;gap:4px;background:#f1f3f5;border-radius:50px;padding:4px;width:fit-content;}
+    .lang-btn{border:none;background:transparent;border-radius:50px;padding:6px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;color:#6c757d;transition:all 0.2s ease;}
+    .lang-btn.active{background:#1d6f42;color:#fff;box-shadow:0 2px 8px rgba(29,111,66,0.3);}
+    .lang-btn:hover:not(.active){background:#dee2e6;color:#212529;}
+    .lang-content{display:none;} .lang-content.visible{display:block;} span.lang-content.visible{display:inline;}
+    .section-title-line{border-left:4px solid #1d6f42;padding-left:12px;margin-bottom:14px;}
+    .content-card{background:#f8f9fa;border-radius:10px;border-left:4px solid #1d6f42;padding:20px 24px;margin-bottom:24px;}
+    .highlight-box{background:#d1e7dd;border-left:4px solid #1d6f42;border-radius:6px;padding:14px 18px;font-size:0.93rem;color:#212529!important;}
+    .kpi-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:16px;text-align:center;}
+    .kpi-value{font-size:1.4rem;font-weight:700;color:#1d6f42;}
+    .kpi-label{font-size:0.78rem;color:#6c757d;margin-top:2px;}
+    .info-card{background:#f8f9fa;border-left:4px solid #1d6f42;border-radius:6px;padding:12px 16px;margin-bottom:10px;}
+    .info-card .label{font-size:0.75rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px;}
+    .info-card .value{font-size:0.92rem;font-weight:500;color:#212529;}
+    .excel-hero{background:linear-gradient(135deg,#1d6f4218,#1d6f4208);border-radius:12px;display:flex;align-items:center;justify-content:center;height:180px;margin-bottom:24px;}
+    .excel-hero i{font-size:5rem;color:#1d6f42;opacity:0.7;}
+  </style>
 </head>
-
 <body class="portfolio-details-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Portofolio</h1>
-      </a>
-
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Portofolio</h1></a>
       <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="Portfolio.html" class="active">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portofolio Details</h1>
+              <p class="mb-0">
+                <span class="lang-content visible" data-lang="en">Consumer behavior and sales performance analysis using Microsoft Excel — 2019 Supermarket Case Study.</span>
+                <span class="lang-content" data-lang="id">Analisis perilaku konsumen dan kinerja penjualan menggunakan Microsoft Excel — Studi Kasus Supermarket 2019.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -87,157 +70,195 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
             <li class="current">Portofolio Details</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
-   
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span style="font-size:0.85rem;color:#6c757d;font-weight:500;"><i class="bi bi-translate me-1"></i>Language / Bahasa:</span>
+          <div class="lang-toggle-wrapper">
+            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- SIDEBAR -->
+          <div class="col-lg-3">
+            <div class="excel-hero"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="en">Category</span><span class="lang-content" data-lang="id">Kategori</span></div>
+              <div class="value">Excel</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tools me-1"></i>Tools</div>
+              <div class="value">Microsoft Excel</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-database me-1"></i><span class="lang-content visible" data-lang="en">Dataset</span><span class="lang-content" data-lang="id">Dataset</span></div>
+              <div class="value">1,000 <span class="lang-content visible" data-lang="en">transactions</span><span class="lang-content" data-lang="id">transaksi</span></div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-geo-alt me-1"></i><span class="lang-content visible" data-lang="en">Branches</span><span class="lang-content" data-lang="id">Cabang</span></div>
+              <div class="value">Yangon, Naypyitaw, Mandalay</div>
+            </div>
+            <div class="mt-3">
+              <a href="portfolio.html" class="btn btn-outline-secondary w-100">
+                <i class="bi bi-arrow-left me-2"></i>
+                <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
+                <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
+              </a>
             </div>
           </div>
 
+          <!-- MAIN CONTENT -->
+          <div class="col-lg-9">
+
+            <!-- ===== ENGLISH ===== -->
+            <div class="lang-content visible" data-lang="en">
+              <h2 class="fw-bold mb-1">Consumer Behavior & Sales Performance Analysis: 2019 Supermarket Case Study</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Project Overview</h4>
+                <p>In an era where data is the backbone of decision-making, the ability to translate raw transactional records into actionable business intelligence is crucial. This portfolio showcases a comprehensive end-to-end data analysis project focused on the 2019 Supermarket Sales Performance. The project begins with a deep dive into the Data Integrity & Engineering phase — utilizing a dataset of 1,000 unique transactions across three regional branches (Yangon, Naypyitaw, and Mandalay) — followed by rigorous data cleaning, standardization, and structured Excel-based reporting. Following the data preparation, the project transitions into a Strategic Visualization phase, synthesizing complex variables into an intuitive, interactive dashboard.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Introduction</h4>
+                <p>The following analysis provides a comprehensive overview of the 2019 sales performance for supermarket operations across three key regions: Mandalay, Naypyitaw, and Yangon. This report evaluates core business health through KPIs such as total revenue and transaction volume, while identifying critical trends in consumer behavior and geographical performance.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dataset</h4>
+                <img src="assets/img/portfolio/porto-excel-2-1.png" alt="Dataset" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>The dataset was meticulously cleaned and structured into an official Excel table format, ensuring dynamic scalability and consistent data types. Key engineering steps included extraction of the month attribute for time-series analysis and standardization of financial metrics. The data architecture was organized across dedicated worksheets for raw data, pivot tables, and final visualizations.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Sales Dashboard</h4>
+                <img src="assets/img/portfolio/porto-excel-2-2.png" alt="Dashboard" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Sales Performance Analysis</h4>
+                <img src="assets/img/portfolio/porto-excel-2-3.png" alt="Sales Performance" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$322,966.75</div><div class="kpi-label">Total Revenue</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">1,000</div><div class="kpi-label">Total Orders</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$322.97</div><div class="kpi-label">Average Revenue / Transaction</div></div></div>
+                </div>
+                <p>The year started with a high volume of sales in Q1, peaking in January at over $80,000. The "Sales Performance" chart reveals a steady downward trend, with monthly revenue stabilizing at significantly lower levels from April through December.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Regional & Operational Insights</h4>
+                <img src="assets/img/portfolio/porto-excel-2-4.png" alt="Regional Insights" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>Naypyitaw (Branch C) emerged as the leading location with <strong>$110,568.71</strong> in total sales. Regional product strengths: Naypyitaw dominates Food & Beverages, Yangon leads in Home & Lifestyle. Payment methods are nearly equal: E-wallet (345), Cash (344), Credit Card (311).</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Customer Demographics</h4>
+                <img src="assets/img/portfolio/porto-excel-2-5.png" alt="Demographics" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>The customer base is split <strong>50/50</strong> between Members and Normal shoppers, indicating successful loyalty program penetration. Gender distribution is nearly even: Female 51.98% and Male 48.02%, suggesting broad appeal across a diverse audience.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Conclusion & Strategic Summary</h4>
+                <div class="content-card">
+                  <p>The 2019 analysis reveals a business with a strong operational foundation but facing a significant growth challenge post-Q1. Key strategic recommendations:</p>
+                  <ul>
+                    <li>Implement seasonal marketing strategies to replicate January's high-performance levels.</li>
+                    <li>Leverage Naypyitaw's success in Food & Beverages as a blueprint for cross-promotion in other branches.</li>
+                    <li>Introduce targeted rewards for credit card users to balance payment methods and increase average transaction value.</li>
+                  </ul>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill text-success me-2"></i>
+                    <strong>Key Takeaway:</strong> By maintaining demographic appeal while addressing mid-year sales slumps through data-driven marketing, the supermarket is well-positioned for sustainable year-over-year growth.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== END ENGLISH ===== -->
+
+            <!-- ===== BAHASA INDONESIA ===== -->
+            <div class="lang-content" data-lang="id">
+              <h2 class="fw-bold mb-1">Analisis Perilaku Konsumen & Kinerja Penjualan: Studi Kasus Supermarket 2019</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Gambaran Proyek</h4>
+                <p>Di era di mana data menjadi tulang punggung pengambilan keputusan, kemampuan mengubah catatan transaksi mentah menjadi kecerdasan bisnis yang dapat ditindaklanjuti sangatlah krusial. Portofolio ini menampilkan proyek analisis data end-to-end yang komprehensif berfokus pada Kinerja Penjualan Supermarket 2019. Proyek dimulai dengan fase Data Integrity & Engineering menggunakan 1.000 transaksi unik dari tiga cabang regional (Yangon, Naypyitaw, dan Mandalay), dilanjutkan dengan pembersihan data, standardisasi, dan pelaporan berbasis Excel yang terstruktur, kemudian beralih ke fase Visualisasi Strategis dalam bentuk dashboard interaktif.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Pendahuluan</h4>
+                <p>Analisis berikut memberikan gambaran komprehensif tentang kinerja penjualan tahun 2019 untuk operasi supermarket di tiga wilayah utama: Mandalay, Naypyitaw, dan Yangon. Laporan ini mengevaluasi kesehatan bisnis inti melalui KPI seperti total pendapatan dan volume transaksi, sekaligus mengidentifikasi tren penting dalam perilaku konsumen dan kinerja geografis.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dataset</h4>
+                <img src="assets/img/portfolio/porto-excel-2-1.png" alt="Dataset" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>Dataset dibersihkan dan distrukturisasi secara cermat ke dalam format tabel Excel resmi. Langkah-langkah rekayasa data utama meliputi ekstraksi atribut bulan untuk analisis time-series dan standardisasi metrik keuangan. Arsitektur data diorganisasi dalam worksheet terpisah untuk data mentah, pivot table, dan visualisasi akhir.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dashboard Penjualan</h4>
+                <img src="assets/img/portfolio/porto-excel-2-2.png" alt="Dashboard" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Analisis Kinerja Penjualan</h4>
+                <img src="assets/img/portfolio/porto-excel-2-3.png" alt="Kinerja Penjualan" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$322,966.75</div><div class="kpi-label">Total Pendapatan</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">1,000</div><div class="kpi-label">Total Pesanan</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$322.97</div><div class="kpi-label">Rata-rata Pendapatan / Transaksi</div></div></div>
+                </div>
+                <p>Tahun dimulai dengan volume penjualan tinggi di Q1, mencapai puncak di Januari lebih dari $80.000. Grafik menunjukkan tren penurunan yang stabil dengan pendapatan bulanan menstabilkan pada level lebih rendah dari April hingga Desember.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Wawasan Regional & Operasional</h4>
+                <img src="assets/img/portfolio/porto-excel-2-4.png" alt="Wawasan Regional" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>Naypyitaw (Cabang C) muncul sebagai lokasi terdepan dengan total penjualan <strong>$110.568,71</strong>. Kekuatan produk regional: Naypyitaw mendominasi Makanan & Minuman, Yangon unggul di Rumah & Gaya Hidup. Metode pembayaran hampir merata: E-wallet (345), Tunai (344), Kartu Kredit (311).</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Demografi Pelanggan</h4>
+                <img src="assets/img/portfolio/porto-excel-2-5.png" alt="Demografi" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+                <p>Basis pelanggan terbagi <strong>50/50</strong> antara Member dan pelanggan Normal, menunjukkan penetrasi program loyalitas yang sukses. Distribusi gender hampir merata: Perempuan 51,98% dan Laki-laki 48,02%, menunjukkan daya tarik luas terhadap audiens yang beragam.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Kesimpulan & Ringkasan Strategis</h4>
+                <div class="content-card">
+                  <p>Analisis 2019 mengungkapkan bisnis dengan fondasi operasional yang kuat namun menghadapi tantangan pertumbuhan signifikan pasca-Q1. Rekomendasi strategis utama:</p>
+                  <ul>
+                    <li>Terapkan strategi pemasaran musiman untuk mereplikasi level kinerja tinggi di bulan Januari.</li>
+                    <li>Manfaatkan kesuksesan Naypyitaw di Makanan & Minuman sebagai cetak biru promosi silang di cabang lain.</li>
+                    <li>Perkenalkan reward khusus pengguna kartu kredit untuk menyeimbangkan metode pembayaran dan meningkatkan nilai transaksi rata-rata.</li>
+                  </ul>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill text-success me-2"></i>
+                    <strong>Kesimpulan Utama:</strong> Dengan mempertahankan daya tarik demografis sambil mengatasi penurunan penjualan pertengahan tahun melalui pemasaran berbasis data, supermarket ini berposisi baik untuk pertumbuhan yang berkelanjutan.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== END BAHASA INDONESIA ===== -->
+
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
-     <!-- PROJECT TITLE -->
-    <div class="row mb-4">
-      <div class="col-lg-12 text-center">
-        <h1>Consumer Behavior & Sales Performance Analysis: 2019 Supermarket Case Study</h1>
-        
-      </div>
-    </div>
-
-    <!-- PROJECT OVERVIEW -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Project Overview</h3>
-        <p>
-          In an era where data is the backbone of decision-making, the ability to translate raw transactional records into actionable business intelligence is crucial. This portfolio showcases a comprehensive end-to-end data analysis project focused on the 2019 Supermarket Sales Performance. The journey of this project begins with a deep dive into the technical foundation—the Data Integrity & Engineering phase. By utilizing a dataset consisting of 1,000 unique transactions across three regional branches (Yangon, Naypyitaw, and Mandalay), I performed rigorous data cleaning and structuring to ensure the reliability of every metric. This process involved standardizing financial variables, extracting time-based attributes for trend analysis, and organizing the data architecture within Excel to support dynamic reporting.
-          Following the data preparation, the project transitions into the Strategic Visualization phase. Here, I synthesized complex variables—ranging from customer demographics and payment preferences to product line performance—into an intuitive, interactive dashboard. This report does not merely present numbers; it identifies critical market trends, such as the significant Q1 performance peak and the balanced penetration of our loyalty programs. 
-          By bridging the gap between raw Excel data and high-level executive summaries, this analysis serves as a roadmap for identifying operational strengths and uncovering opportunities for sustainable retail growth.
-        </p>
-      </div>
-    </div>
-     <!-- Introduction -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Introduction</h3>
-        <p>The following analysis provides a comprehensive overview of the 2019 sales performance for our supermarket operations across three key regions: Mandalay, Naypyitaw, and Yangon. This report is designed to evaluate core business health by examining key performance indicators (KPIs), such as total revenue and transaction volume, while also identifying critical trends in consumer behavior and geographical performance. 
-          By dissecting the data across product categories, payment preferences, and customer demographics, this analysis aims to highlight both the operational successes of the past year and the strategic challenges that require attention to ensure sustainable growth in the future.
-        </p>
-         </div>
-    </div>
-<!-- data set -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Data Set</h3>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-2-1.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-       </div>
-       
-        <p>The technical foundation of this project is built upon a meticulously cleaned and structured dataset, which serves as the single source of truth for the supermarket sales dashboard. By transforming the raw data into an official Excel table format, the dataset ensures dynamic scalability and consistent data types across key variables such as Invoice ID, Branch, and Product line.
-          Key data engineering steps were performed, including the extraction of the month attribute from transaction dates to enable time-series analysis and the standardization of financial metrics like Tax 5% and Total revenue. 
-          This organized approach—evidenced by the separation of raw data, pivot tables, and final visualizations into dedicated worksheets—guarantees that the insights presented in the report are accurate, verifiable, and ready for professional business application.
-        </p>
-        </div>
-    </div>
-
-
-        <!-- Sales Performance Analysis -->
-<div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Dasboard Sales Performance</h3>
-
- <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-2-2.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-</div>
-  </div>
-    </div>   
-  
-        <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Sales Performance Analysis</h3>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-2-3.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-       </div> 
-
-<p>The Supermarket Sales Report for 2019 provides a detailed snapshot of a retail business operating across three cities: Mandalay, Naypyitaw, and Yangon. 
-  According to the high-level metrics, the supermarket generated a Total Revenue of $322,966.75 from exactly 1,000 orders, resulting in an Average Revenue of $322.97 per transaction. 
-  While the year started with a high volume of sales in the first quarter peaking in January at over $80,000 the "Sales Performance" chart reveals a steady downward trend, with monthly revenue stabilizing at significantly lower levels from April through December.
-</p>
-</div>
-    </div>
-      
-    <!-- OBJECTIVES -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Regional and Operational Insights</h3>
-
-         <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-2-4.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-       </div>
-
-        <p>Geographically, Naypyitaw (Branch C) emerged as the leading location with a total of $110,568.71 in sales, followed closely by Mandalay and Yangon. 
-          The product analysis shows distinct regional strengths: Naypyitaw dominates the Food and Beverages sector, while Yangon leads in Home and Lifestyle products. Operationally, customers show a nearly equal preference for E-wallets (345 transactions) and Cash (344 transactions), while credit cards are utilized slightly less frequently (311 transactions).
-        </p>
-      </div>
-    </div>
-  
-
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Customer Demographics</h3>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/porto-excel-2-5.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 85%;" 
-       alt="Tabel Of Sales">
-       </div>
-
-        <p>From a demographic perspective, the supermarket maintains an exceptionally balanced reach. 
-          The customer base is split perfectly 50/50 between Members and Normal shoppers, indicating successful loyalty program penetration. Additionally, the gender distribution is nearly even, with Females making up 51.98% of the clientele and Males accounting for 48.02%. This suggests that the supermarket's current product offerings and marketing strategies appeal broadly to a highly diverse audience.
-        </p>
-      </div>
-    </div>
-   
-
-    <!-- BUSINESS VALUE -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Conclusion & Strategic Summary</h3>
-        <p>The 2019 Supermarket Sales Analysis reveals a business with a strong operational foundation but facing a significant growth challenge. While the year began with exceptional momentum, the sharp decline in revenue following the first quarter suggests a shift in market dynamics or consumer retention that requires immediate strategic attention.
-          </p>
-          <p>Operationally, the business maintains high efficiency, evidenced by an equal distribution of member versus normal customers and a nearly identical preference for Cash and E-wallet payments. 
-          Geographically, Naypyitaw (Branch C) stands as the primary revenue driver, contributing the highest total sales of $110,568.71, while Yangon and Mandalay maintain stable and competitive performance. 
-          Furthermore, the supermarket has successfully captured a diverse audience, maintaining a near-perfect gender balance and high loyalty program penetration. To reverse the downward sales trend observed after March, the business should focus on implementing seasonal marketing strategies to replicate the high-performance levels seen in January. 
-          Leveraging Naypyitaw’s success in Food and Beverages and Yangon’s lead in Home and Lifestyle could serve as a blueprint to cross-promote underperforming categories in other branches. Additionally, introducing targeted rewards for credit card users could help balance payment methods and potentially increase the average transaction value.
-          </p> 
-          <p>In summary, by maintaining its demographic appeal while addressing the mid-year sales slump through data-driven marketing, the supermarket is well-positioned to stabilize its revenue and achieve sustainable year-over-year growth.
-          </p>
-      </div>
-    </div>   
-</section>
- <!-- end-->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -248,27 +269,14 @@
         <a href="https://www.linkedin.com/in/haris-saputra-1b4807245"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span></div>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -279,10 +287,15 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    function switchLang(lang){
+      document.getElementById('btn-en').classList.toggle('active',lang==='en');
+      document.getElementById('btn-id').classList.toggle('active',lang==='id');
+      document.querySelectorAll('.lang-content').forEach(function(el){
+        el.classList.toggle('visible',el.getAttribute('data-lang')===lang);
+      });
+    }
+  </script>
 </body>
-
 </html>

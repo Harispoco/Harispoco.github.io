@@ -53,13 +53,15 @@
     span.lang-content.visible { display: inline; }
 
     /* Content Styling */
-    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; }
+    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; color: #212529 !important; }
     .step-card {
       background: #f8f9fa; border-radius: 10px;
       border-left: 4px solid #1d6f42; padding: 20px 24px; margin-bottom: 28px;
+      color: #212529 !important;
     }
+    .step-card h5, .step-card h6, .step-card p, .step-card li { color: #212529 !important; }
     .step-badge {
-      background: #1d6f42; color: #fff;
+      background: #1d6f42; color: #fff !important;
       font-size: 0.75rem; font-weight: 700;
       padding: 3px 12px; border-radius: 20px;
       display: inline-block; margin-bottom: 10px;
@@ -73,22 +75,35 @@
     .insight-card {
       background: #fff; border: 1px solid #dee2e6;
       border-radius: 8px; padding: 16px 20px; margin-bottom: 14px;
+      color: #212529 !important;
     }
-    .insight-card h5 { color: #1d6f42; margin-bottom: 6px; }
+    .insight-card h5 { color: #1d6f42 !important; margin-bottom: 6px; }
+    .insight-card p, .insight-card li { color: #212529 !important; }
     .highlight-box {
       background: #d1e7dd; border-left: 4px solid #1d6f42;
       border-radius: 6px; padding: 14px 18px;
       font-size: 0.93rem; color: #212529 !important;
     }
+    .highlight-box strong { color: #212529 !important; }
     .info-card {
       background: #f8f9fa; border-left: 4px solid #1d6f42;
       border-radius: 6px; padding: 12px 16px; margin-bottom: 10px;
     }
     .info-card .label {
-      font-size: 0.75rem; color: #6c757d;
+      font-size: 0.75rem; color: #6c757d !important;
       text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
     }
-    .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529; }
+    .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529 !important; }
+
+    /* Force all text inside lang-content to be visible */
+    .lang-content.visible h2,
+    .lang-content.visible h3,
+    .lang-content.visible h4,
+    .lang-content.visible h5,
+    .lang-content.visible h6,
+    .lang-content.visible p,
+    .lang-content.visible li,
+    .lang-content.visible strong { color: #212529 !important; }
     .excel-hero {
       background: linear-gradient(135deg, #1d6f4218, #1d6f4208);
       border-radius: 12px; display: flex; align-items: center;

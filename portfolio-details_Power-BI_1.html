@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZGDD97NR9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0ZGDD97NR9');</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portofolio Details - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
+  <title>Portofolio Details - BMW Global Sales Performance Analysis</title>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    --pbi:#0078d4;
+    .lang-toggle-wrapper{display:flex;align-items:center;gap:4px;background:#f1f3f5;border-radius:50px;padding:4px;width:fit-content;}
+    .lang-btn{border:none;background:transparent;border-radius:50px;padding:6px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;color:#6c757d;transition:all 0.2s ease;}
+    .lang-btn.active{background:#0078d4;color:#fff;box-shadow:0 2px 8px rgba(0,120,212,0.3);}
+    .lang-btn:hover:not(.active){background:#dee2e6;color:#212529;}
+    .lang-content{display:none;} .lang-content.visible{display:block;} span.lang-content.visible{display:inline;}
+    .section-title-line{border-left:4px solid #0078d4;padding-left:12px;margin-bottom:14px;}
+    .content-card{background:#f8f9fa;border-radius:10px;border-left:4px solid #0078d4;padding:20px 24px;margin-bottom:24px;}
+    .highlight-box{background:#cfe2ff;border-left:4px solid #0078d4;border-radius:6px;padding:14px 18px;font-size:0.93rem;color:#212529!important;}
+    .kpi-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:16px;text-align:center;}
+    .kpi-value{font-size:1.4rem;font-weight:700;color:#0078d4;}
+    .kpi-label{font-size:0.78rem;color:#6c757d;margin-top:2px;}
+    .finding-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:18px 20px;margin-bottom:14px;border-top:3px solid #0078d4;}
+    .finding-card h5{color:#0078d4;margin-bottom:8px;}
+    .info-card{background:#f8f9fa;border-left:4px solid #0078d4;border-radius:6px;padding:12px 16px;margin-bottom:10px;}
+    .info-card .label{font-size:0.75rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px;}
+    .info-card .value{font-size:0.92rem;font-weight:500;color:#212529;}
+    .pbi-hero{background:linear-gradient(135deg,#0078d418,#0078d408);border-radius:12px;display:flex;align-items:center;justify-content:center;height:180px;margin-bottom:24px;}
+    .pbi-hero i{font-size:5rem;color:#0078d4;opacity:0.7;}
+  </style>
 </head>
-
 <body class="portfolio-details-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Portofolio</h1>
-      </a>
-
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Portofolio</h1></a>
       <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="Portfolio.html" class="active">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portofolio Details</h1>
+              <p class="mb-0">
+                <span class="lang-content visible" data-lang="en">BMW global car sales performance analysis using an interactive Power BI dashboard.</span>
+                <span class="lang-content" data-lang="id">Analisis kinerja penjualan global BMW menggunakan dashboard Power BI interaktif.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -87,139 +73,203 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
             <li class="current">Portofolio Details</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
-   
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span style="font-size:0.85rem;color:#6c757d;font-weight:500;"><i class="bi bi-translate me-1"></i>Language / Bahasa:</span>
+          <div class="lang-toggle-wrapper">
+            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- SIDEBAR -->
+          <div class="col-lg-3">
+            <div class="pbi-hero"><i class="bi bi-bar-chart-line"></i></div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="en">Category</span><span class="lang-content" data-lang="id">Kategori</span></div>
+              <div class="value">Power BI</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tools me-1"></i>Tools</div>
+              <div class="value">Microsoft Power BI</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-globe me-1"></i><span class="lang-content visible" data-lang="en">Coverage</span><span class="lang-content" data-lang="id">Cakupan</span></div>
+              <div class="value"><span class="lang-content visible" data-lang="en">Global (Asia, Europe, N. America)</span><span class="lang-content" data-lang="id">Global (Asia, Eropa, Amerika Utara)</span></div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-calendar3 me-1"></i><span class="lang-content visible" data-lang="en">Period</span><span class="lang-content" data-lang="id">Periode</span></div>
+              <div class="value">2010 – 2024</div>
+            </div>
+            <div class="mt-3">
+              <a href="portfolio.html" class="btn btn-outline-secondary w-100">
+                <i class="bi bi-arrow-left me-2"></i>
+                <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
+                <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
+              </a>
             </div>
           </div>
 
+          <!-- MAIN CONTENT -->
+          <div class="col-lg-9">
+
+            <!-- ===== ENGLISH ===== -->
+            <div class="lang-content visible" data-lang="en">
+              <h2 class="fw-bold mb-1">BMW Global Sales Performance Analysis</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Introduction</h4>
+                <p>This analysis examines BMW's global car sales performance using an interactive Power BI dashboard. The objective is to identify key business insights from historical sales data, evaluate revenue distribution across regions and product lines, and assess performance trends over time. The dataset covers total sales volume, total sales value, regional distribution, product model performance, sales classification, and transmission type segmentation over multiple years.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dashboard</h4>
+                <img src="assets/img/portfolio/sales BMW BI.png" alt="BMW Dashboard" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Key Metrics</h4>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$19.01T</div><div class="kpi-label">Total Sales Value</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">253M</div><div class="kpi-label">Total Sales Volume (units)</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$380.24M</div><div class="kpi-label">Average Total Sales Value</div></div></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Analytical Findings</h4>
+
+                <div class="finding-card">
+                  <h5>1. Overall Performance Overview</h5>
+                  <p>BMW generated a total sales value of $19.01T with 253 million units, indicating large-scale global operations with strong revenue generation capacity. The high aggregate revenue reflects an effective premium pricing strategy combined with substantial market demand.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>2. Time Series Trend Analysis</h5>
+                  <p>Yearly sales show stable performance from 2010–2019, followed by a sharp 2020 decline, a strong 2022 rebound (the highest peak in the observed period), then correction in 2023 and recovery in 2024. This pattern suggests:</p>
+                  <ul>
+                    <li>Sensitivity to macroeconomic disruptions</li>
+                    <li>Strong post-crisis recovery capability</li>
+                    <li>Potential pent-up demand effect contributing to the 2022 spike</li>
+                  </ul>
+                </div>
+
+                <div class="finding-card">
+                  <h5>3. Regional Performance Analysis</h5>
+                  <p>Sales volume across Asia, Europe, and North America is highly balanced, demonstrating effective global market penetration and reduced dependency on a single economic zone. The slightly stronger contribution from Asia suggests continued growth opportunities in emerging markets.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>4. Product Portfolio Performance</h5>
+                  <p>Premium and flagship models lead overall performance. Electric vehicle (EV) models rank among the top contributors, indicating BMW's electrification strategy is translating into measurable revenue. SUV models maintain consistent volume, aligning with global consumer demand trends.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>5. Sales Classification & Transmission Insights</h5>
+                  <p>High vs. Low sales classification is nearly even, with slight High dominance (51.08%), reflecting strong pricing power. Transmission distribution is also balanced between Automatic and Manual, indicating presence in regions where manual transmission remains relevant (especially Europe).</p>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Conclusion & Strategic Summary</h4>
+                <div class="content-card">
+                  <p>BMW maintains a strong and diversified global sales structure supported by balanced regional distribution and a well-positioned premium product portfolio. Although annual performance reflects volatility from external conditions, the company demonstrates solid recovery capability.</p>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill me-2" style="color:#0078d4;"></i>
+                    <strong>Key Takeaway:</strong> Leveraging predictive analytics and deeper profitability analysis can further enhance strategic planning. BMW's direction toward luxury positioning and electrification is well-aligned with current market trends.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== END ENGLISH ===== -->
+
+            <!-- ===== BAHASA INDONESIA ===== -->
+            <div class="lang-content" data-lang="id">
+              <h2 class="fw-bold mb-1">Analisis Kinerja Penjualan Global BMW</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Pendahuluan</h4>
+                <p>Analisis ini mengkaji kinerja penjualan global BMW menggunakan dashboard Power BI interaktif. Tujuannya adalah mengidentifikasi wawasan bisnis utama dari data penjualan historis, mengevaluasi distribusi pendapatan lintas wilayah dan lini produk, serta menilai tren kinerja dari waktu ke waktu. Dataset mencakup volume penjualan, nilai penjualan, distribusi regional, kinerja model produk, klasifikasi penjualan, dan segmentasi jenis transmisi selama beberapa tahun.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dashboard</h4>
+                <img src="assets/img/portfolio/sales BMW BI.png" alt="BMW Dashboard" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Metrik Utama</h4>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$19,01T</div><div class="kpi-label">Total Nilai Penjualan</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">253 Juta</div><div class="kpi-label">Total Volume Penjualan (unit)</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">$380,24 Juta</div><div class="kpi-label">Rata-rata Total Nilai Penjualan</div></div></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Temuan Analisis</h4>
+
+                <div class="finding-card">
+                  <h5>1. Gambaran Kinerja Keseluruhan</h5>
+                  <p>BMW menghasilkan total nilai penjualan sebesar $19,01T dengan 253 juta unit, menunjukkan operasi global berskala besar dengan kapasitas pendapatan yang kuat. Pendapatan agregat yang tinggi mencerminkan strategi penetapan harga premium yang efektif.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>2. Analisis Tren Time Series</h5>
+                  <p>Penjualan tahunan menunjukkan kinerja stabil dari 2010–2019, diikuti penurunan tajam di 2020, pemulihan kuat di 2022 (puncak tertinggi), koreksi di 2023, dan pemulihan di 2024. Pola ini menunjukkan:</p>
+                  <ul>
+                    <li>Sensitivitas terhadap gangguan makroekonomi</li>
+                    <li>Kemampuan pemulihan pasca-krisis yang kuat</li>
+                    <li>Efek permintaan tertunda yang berkontribusi pada lonjakan 2022</li>
+                  </ul>
+                </div>
+
+                <div class="finding-card">
+                  <h5>3. Analisis Kinerja Regional</h5>
+                  <p>Volume penjualan di Asia, Eropa, dan Amerika Utara sangat seimbang, menunjukkan penetrasi pasar global yang efektif. Kontribusi Asia yang sedikit lebih kuat menunjukkan peluang pertumbuhan berkelanjutan di pasar berkembang.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>4. Kinerja Portofolio Produk</h5>
+                  <p>Model premium dan flagship memimpin kinerja keseluruhan. Model kendaraan listrik (EV) termasuk kontributor teratas, menunjukkan strategi elektrifikasi BMW mulai menghasilkan dampak pendapatan yang terukur. Model SUV mempertahankan volume yang konsisten.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>5. Wawasan Klasifikasi Penjualan & Transmisi</h5>
+                  <p>Klasifikasi Tinggi vs. Rendah hampir merata, dengan dominasi Tinggi sedikit lebih besar (51,08%), mencerminkan kekuatan penetapan harga. Distribusi transmisi juga seimbang antara Otomatis dan Manual, menunjukkan kehadiran di wilayah di mana transmisi manual masih relevan.</p>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Kesimpulan & Ringkasan Strategis</h4>
+                <div class="content-card">
+                  <p>BMW mempertahankan struktur penjualan global yang kuat dan terdiversifikasi, didukung distribusi regional yang seimbang dan portofolio produk premium yang tereposisi dengan baik. Meskipun kinerja tahunan mencerminkan volatilitas akibat kondisi eksternal, perusahaan menunjukkan kemampuan pemulihan yang solid.</p>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill me-2" style="color:#0078d4;"></i>
+                    <strong>Kesimpulan Utama:</strong> Memanfaatkan analitik prediktif dan analisis profitabilitas yang lebih mendalam dapat meningkatkan perencanaan strategis. Arah BMW menuju positioning mewah dan elektrifikasi sangat selaras dengan tren pasar saat ini.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== END BAHASA INDONESIA ===== -->
+
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
-     <!-- PROJECT TITLE -->
-    <div class="row mb-4">
-      <div class="col-lg-12 text-center">
-        <h1>BMW Global Sales Performance Analysis</h1>
-        
-      </div>
-    </div>
-     <!-- Introduction -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Introduction</h3>
-        <p>This analysis examines BMW’s global car sales performance using an interactive Power BI dashboard. The objective of this project is to identify key business insights from historical sales data, evaluate revenue distribution across regions and product lines, and assess performance trends over time. 
-          By applying exploratory data analysis techniques, this report aims to highlight revenue drivers, detect volatility patterns, and provide strategic recommendations to support data-driven decision-making.
-          The dataset covers total sales volume, total sales value, regional distribution, product model performance, sales classification, and transmission type segmentation over multiple years.
-          <p>
-         </div>
-    </div>
-<!-- data set -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>BMW Global Sales Performance Dashboard</h3>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/sales BMW BI.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%;" 
-       alt="Tabel Of Sales">
-       </div>
-        </div>
-    </div>  
-  
-        <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Sales Performance Analysis</h3>
-
-   <div class="row mb-3">
-      <div class="col-lg-12">
-        <h4>1. Overall Performance Overview</h4>
-         </div>
-        </div>
-
-<p>BMW generated a total sales value of $19.01T with a total sales volume of 253 million units, indicating a large-scale global operation with strong revenue generation capacity. 
-  The high aggregate revenue suggests effective premium pricing strategy combined with substantial market demand. The average total sales value of $380.24M further reflects consistent revenue contribution across reporting periods.
-</p>
-</div>
-    </div>
-   
-
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h4>2. Time Series Trend Analysis</h4>
-      
-<p>The yearly sales trend shows relatively stable performance from 2010 to 2019, followed by a sharp decline in 2020. A strong rebound occurred in 2022, marking the highest sales peak within the observed period, before experiencing another correction in 2023 and a recovery in 2024. 
-  The average total sales value of $380.24M further reflects consistent revenue contribution across reporting periods.
-</p>
-<p>This pattern suggests:</p>
-<ul>
-  <li>Sensitivity to macroeconomic disruptions.</li>
-  <li>Strong post-crisis recovery capability.</li>
-  <li>Potential pent-up demand effect contributing to the 2022 spike.</li>
-</ul>
-<p>The volatility indicates that while BMW maintains strong brand equity and market presence, external economic conditions significantly influence annual performance. 
-  This finding highlights the importance of implementing predictive forecasting models to anticipate cyclical fluctuations.
-</p>
-</div>
-</div>
-
-<div class="row mb-5">
-      <div class="col-lg-12">
-        <h4>3. Regional Performance Analysis</h4>
-
-<p>Sales volume across Asia, Europe, and North America appears highly balanced, with no single region dominating overall performance. 
-  This balanced geographical distribution demonstrates effective global market penetration and reduced dependency on a specific economic zone. The average total sales value of $380.24M further reflects consistent revenue contribution across reporting periods.
-</p>
-<p>From a strategic perspective, this diversification lowers regional concentration risk and enhances long-term revenue stability. 
-  The slightly stronger contribution from Asia suggests continued growth opportunities in emerging and high-demand markets.
-</p>
-</div>
-  </div>
-
-<div class="row mb-5">
-      <div class="col-lg-12">
-        <h4>4. Product Portfolio Performance</h4>
-
-<p>Model-level analysis reveals that premium models and high-end series contribute significantly to total sales. 
-  Flagship models lead overall performance, reinforcing BMW’s strong positioning in the luxury automotive segment. The average total sales value of $380.24M further reflects consistent revenue contribution across reporting periods.
-</p>
- <p>Notably, electric vehicle (EV) models rank among the top contributors, indicating that BMW’s electrification strategy is beginning to translate into measurable revenue impact. Additionally, SUV models maintain consistent sales volume, aligning with global consumer demand trends.
-  This diversified product mix (luxury sedans, SUVs, and EVs) demonstrates portfolio balance and strategic alignment with evolving automotive market preferences.
- </p> 
- </div>
-  </div>
- 
- <div class="row mb-5">
-      <div class="col-lg-12">
-        <h4>5. Sales Classification & Transmission Insights</h4>
-
-<p>The sales classification between High and Low categories is nearly evenly distributed, with a slight dominance in the High category (51.08%). This suggests BMW maintains strong pricing power while still capturing broader market segments.
-  Transmission type distribution is also almost balanced between Automatic and Manual. This may reflect strong market presence in regions where manual transmission remains relevant, particularly in Europe.
-</p>
-   </div>
-    </div>
-
-    <!-- BUSINESS VALUE -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Conclusion & Strategic Summary</h3>
-        <p>Overall, the analysis shows that BMW maintains a strong and diversified global sales structure supported by balanced regional distribution and a well-positioned premium product portfolio. 
-          Although annual performance reflects volatility influenced by external economic conditions, the company demonstrates solid recovery capability and sustained market strength.
-          <p>The significant contribution from premium and electric vehicle models indicates that BMW’s strategic direction toward luxury positioning and electrification is aligned with current market trends. Moving forward, leveraging predictive analytics and deeper profitability analysis can further enhance strategic planning and long-term performance stability.
-          </p>
-          </p>
-      </div>
-    </div>   
-</section>
- <!-- end-->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -230,27 +280,14 @@
         <a href="https://www.linkedin.com/in/haris-saputra-1b4807245"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span></div>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -261,10 +298,15 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    function switchLang(lang){
+      document.getElementById('btn-en').classList.toggle('active',lang==='en');
+      document.getElementById('btn-id').classList.toggle('active',lang==='id');
+      document.querySelectorAll('.lang-content').forEach(function(el){
+        el.classList.toggle('visible',el.getAttribute('data-lang')===lang);
+      });
+    }
+  </script>
 </body>
-
 </html>

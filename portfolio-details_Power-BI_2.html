@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0ZGDD97NR9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0ZGDD97NR9');</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portofolio Details - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
+  <title>Portofolio Details - Online Course Subscription Analysis</title>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .lang-toggle-wrapper{display:flex;align-items:center;gap:4px;background:#f1f3f5;border-radius:50px;padding:4px;width:fit-content;}
+    .lang-btn{border:none;background:transparent;border-radius:50px;padding:6px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;color:#6c757d;transition:all 0.2s ease;}
+    .lang-btn.active{background:#0078d4;color:#fff;box-shadow:0 2px 8px rgba(0,120,212,0.3);}
+    .lang-btn:hover:not(.active){background:#dee2e6;color:#212529;}
+    .lang-content{display:none;} .lang-content.visible{display:block;} span.lang-content.visible{display:inline;}
+    .section-title-line{border-left:4px solid #0078d4;padding-left:12px;margin-bottom:14px;}
+    .content-card{background:#f8f9fa;border-radius:10px;border-left:4px solid #0078d4;padding:20px 24px;margin-bottom:24px;}
+    .highlight-box{background:#cfe2ff;border-left:4px solid #0078d4;border-radius:6px;padding:14px 18px;font-size:0.93rem;color:#212529!important;}
+    .kpi-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:16px;text-align:center;}
+    .kpi-value{font-size:1.4rem;font-weight:700;color:#0078d4;}
+    .kpi-label{font-size:0.78rem;color:#6c757d;margin-top:2px;}
+    .finding-card{background:#fff;border:1px solid #dee2e6;border-radius:8px;padding:18px 20px;margin-bottom:14px;border-top:3px solid #0078d4;}
+    .finding-card h5{color:#0078d4;margin-bottom:8px;}
+    .info-card{background:#f8f9fa;border-left:4px solid #0078d4;border-radius:6px;padding:12px 16px;margin-bottom:10px;}
+    .info-card .label{font-size:0.75rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px;}
+    .info-card .value{font-size:0.92rem;font-weight:500;color:#212529;}
+    .pbi-hero{background:linear-gradient(135deg,#0078d418,#0078d408);border-radius:12px;display:flex;align-items:center;justify-content:center;height:180px;margin-bottom:24px;}
+    .pbi-hero i{font-size:5rem;color:#0078d4;opacity:0.7;}
+  </style>
 </head>
-
 <body class="portfolio-details-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Portofolio</h1>
-      </a>
-
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Portofolio</h1></a>
       <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="Portfolio.html" class="active">Portofolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portofolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portofolio Details</h1>
+              <p class="mb-0">
+                <span class="lang-content visible" data-lang="en">Online course subscription analysis across topic categories, technologies, and instructors using Power BI.</span>
+                <span class="lang-content" data-lang="id">Analisis langganan kursus online lintas kategori topik, teknologi, dan instruktur menggunakan Power BI.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -87,103 +72,195 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
             <li class="current">Portofolio Details</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
-   
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- LANGUAGE TOGGLE -->
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span style="font-size:0.85rem;color:#6c757d;font-weight:500;"><i class="bi bi-translate me-1"></i>Language / Bahasa:</span>
+          <div class="lang-toggle-wrapper">
+            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
+            <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- SIDEBAR -->
+          <div class="col-lg-3">
+            <div class="pbi-hero"><i class="bi bi-mortarboard"></i></div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="en">Category</span><span class="lang-content" data-lang="id">Kategori</span></div>
+              <div class="value">Power BI</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-tools me-1"></i>Tools</div>
+              <div class="value">Microsoft Power BI</div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-database me-1"></i><span class="lang-content visible" data-lang="en">Data Size</span><span class="lang-content" data-lang="id">Ukuran Data</span></div>
+              <div class="value">16M+ <span class="lang-content visible" data-lang="en">subscriptions</span><span class="lang-content" data-lang="id">langganan</span></div>
+            </div>
+            <div class="info-card">
+              <div class="label"><i class="bi bi-bar-chart me-1"></i><span class="lang-content visible" data-lang="en">Technique</span><span class="lang-content" data-lang="id">Teknik</span></div>
+              <div class="value">Data Modeling, DAX, EDA</div>
+            </div>
+            <div class="mt-3">
+              <a href="portfolio.html" class="btn btn-outline-secondary w-100">
+                <i class="bi bi-arrow-left me-2"></i>
+                <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
+                <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
+              </a>
             </div>
           </div>
 
+          <!-- MAIN CONTENT -->
+          <div class="col-lg-9">
+
+            <!-- ===== ENGLISH ===== -->
+            <div class="lang-content visible" data-lang="en">
+              <h2 class="fw-bold mb-1">Online Course Subscription Analysis</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Introduction</h4>
+                <p>This Power BI dashboard was developed to analyze subscription performance across an online learning platform using a data-driven approach. The analysis focuses on understanding user demand patterns by examining total subscriptions across topic categories, technologies, instructors, difficulty levels, and individual course titles. With over 16 million subscriptions, the dataset enables robust descriptive analysis to identify dominant trends, distribution patterns, and potential business risks.</p>
+                <p>The objective is to transform raw subscription data into actionable insights through data modeling, aggregation logic, and interactive visualization — enabling stakeholders to quickly assess performance drivers and detect concentration patterns.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dashboard</h4>
+                <img src="assets/img/portfolio/sales course BI.png" alt="Course Dashboard" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Key Metrics</h4>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">16M+</div><div class="kpi-label">Total Subscriptions</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">~55%</div><div class="kpi-label">Programming Category Share</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">#1</div><div class="kpi-label">Python — Top Technology</div></div></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Analytical Findings</h4>
+
+                <div class="finding-card">
+                  <h5>1. Category Distribution</h5>
+                  <p>The Programming category contributes approximately 55% of total subscriptions — more than half of all platform demand. AI and Machine Learning follow as secondary contributors (~10% each), indicating emerging but not yet dominant demand segments.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>2. Technology Concentration</h5>
+                  <p>Python overwhelmingly leads all other technologies. The treemap visualization shows a significant gap between Python and others, demonstrating that Python acts as the primary demand driver. This concentration suggests strong market alignment but also introduces dependency risk if user preferences shift.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>3. Instructor Performance Distribution</h5>
+                  <p>Instructor-level aggregation reveals a highly skewed distribution consistent with the Pareto principle — one instructor contributes a disproportionately large share. This long-tail pattern indicates performance inequality and highlights the need to investigate instructor-level variables such as topic alignment, publishing frequency, and learner ratings.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>4. Course-Level Demand</h5>
+                  <p>"Introduction to Python" significantly outperforms all other courses, followed by intermediate Python content. This top-heavy funnel suggests strong entry-level demand but does not confirm progression rates — indicating an opportunity for cohort or retention analysis.</p>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Conclusion & Strategic Summary</h4>
+                <div class="content-card">
+                  <p>The dataset demonstrates category and technology concentration, instructor performance imbalance, and strong beginner-level acquisition. While the platform exhibits clear product-market fit within programming education, scalability risks exist if diversification strategies are not implemented.</p>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill me-2" style="color:#0078d4;"></i>
+                    <strong>Key Takeaway:</strong> Content prioritization strategies, instructor performance frameworks, and learning path optimization are key action areas. Additional cohort retention and subscription lifecycle modeling would further strengthen strategic recommendations.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Technical Implementation</h4>
+                <p>This dashboard was built using Power BI with a structured data model enabling dynamic filtering across topic, technology, instructor, and difficulty dimensions. Aggregation measures calculate total subscriptions and distribution percentages. Interactive slicers allow cross-dimensional analysis. Visuals include donut charts, treemaps, and ranked bar charts for clear distribution comparison.</p>
+              </div>
+            </div>
+            <!-- ===== END ENGLISH ===== -->
+
+            <!-- ===== BAHASA INDONESIA ===== -->
+            <div class="lang-content" data-lang="id">
+              <h2 class="fw-bold mb-1">Analisis Langganan Kursus Online</h2>
+              <hr class="mb-4">
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Pendahuluan</h4>
+                <p>Dashboard Power BI ini dikembangkan untuk menganalisis kinerja langganan pada platform pembelajaran online menggunakan pendekatan berbasis data. Analisis berfokus pada pemahaman pola permintaan pengguna dengan mengkaji total langganan lintas kategori topik, teknologi, instruktur, tingkat kesulitan, dan judul kursus individual. Dengan lebih dari 16 juta langganan, dataset ini memungkinkan analisis deskriptif yang kuat untuk mengidentifikasi tren dominan, pola distribusi, dan risiko bisnis potensial.</p>
+                <p>Tujuannya adalah mengubah data langganan mentah menjadi wawasan yang dapat ditindaklanjuti melalui pemodelan data, logika agregasi, dan visualisasi interaktif.</p>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Dashboard</h4>
+                <img src="assets/img/portfolio/sales course BI.png" alt="Dashboard Kursus" class="img-fluid rounded shadow d-block mx-auto mb-3" style="max-width:100%;">
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Metrik Utama</h4>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">16 Juta+</div><div class="kpi-label">Total Langganan</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">~55%</div><div class="kpi-label">Pangsa Kategori Programming</div></div></div>
+                  <div class="col-md-4"><div class="kpi-card"><div class="kpi-value">#1</div><div class="kpi-label">Python — Teknologi Teratas</div></div></div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Temuan Analisis</h4>
+
+                <div class="finding-card">
+                  <h5>1. Distribusi Kategori</h5>
+                  <p>Kategori Programming berkontribusi sekitar 55% dari total langganan — lebih dari separuh permintaan platform. AI dan Machine Learning menyusul sebagai kontributor sekunder (~10% masing-masing), menunjukkan segmen permintaan yang berkembang namun belum dominan.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>2. Konsentrasi Teknologi</h5>
+                  <p>Python secara luar biasa memimpin semua teknologi lainnya. Visualisasi treemap menunjukkan kesenjangan signifikan antara Python dan lainnya. Konsentrasi ini menunjukkan keselarasan pasar yang kuat namun juga memperkenalkan risiko ketergantungan jika preferensi pengguna bergeser.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>3. Distribusi Kinerja Instruktur</h5>
+                  <p>Agregasi tingkat instruktur mengungkap distribusi yang sangat condong — konsisten dengan prinsip Pareto. Satu instruktur berkontribusi porsi yang tidak proporsional besar. Pola distribusi panjang (long-tail) ini menunjukkan ketimpangan kinerja dan menyoroti perlunya investigasi variabel instruktur seperti frekuensi publikasi dan rating pelajar.</p>
+                </div>
+
+                <div class="finding-card">
+                  <h5>4. Permintaan Tingkat Kursus</h5>
+                  <p>"Introduction to Python" secara signifikan mengungguli semua kursus lain. Pola funnel yang berat di bagian atas ini menunjukkan permintaan level pemula yang kuat, namun tidak mengkonfirmasi tingkat perkembangan ke level lanjut — mengindikasikan peluang untuk analisis kohort atau retensi lebih lanjut.</p>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Kesimpulan & Ringkasan Strategis</h4>
+                <div class="content-card">
+                  <p>Dataset menunjukkan konsentrasi kategori dan teknologi, ketimpangan kinerja instruktur, dan akuisisi level pemula yang kuat. Meskipun platform menunjukkan product-market fit yang jelas dalam pendidikan pemrograman, risiko skalabilitas ada jika strategi diversifikasi tidak diterapkan.</p>
+                  <div class="highlight-box mt-3">
+                    <i class="bi bi-lightbulb-fill me-2" style="color:#0078d4;"></i>
+                    <strong>Kesimpulan Utama:</strong> Strategi prioritas konten, kerangka evaluasi kinerja instruktur, dan optimasi jalur belajar adalah area tindakan utama. Pemodelan retensi kohort dan siklus hidup langganan akan lebih memperkuat rekomendasi strategis.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="section-title-line">Implementasi Teknis</h4>
+                <p>Dashboard dibangun menggunakan Power BI dengan model data terstruktur yang memungkinkan filter dinamis lintas dimensi topik, teknologi, instruktur, dan tingkat kesulitan. Measures agregasi menghitung total langganan dan persentase distribusi. Slicer interaktif memungkinkan analisis lintas dimensi. Visual mencakup donut chart, treemap, dan ranked bar chart untuk perbandingan distribusi yang jelas.</p>
+              </div>
+            </div>
+            <!-- ===== END BAHASA INDONESIA ===== -->
+
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
-     <!-- PROJECT TITLE -->
-    <div class="row mb-4">
-      <div class="col-lg-12 text-center">
-        <h1>Online Course Subscription Analysis</h1>
-        
-      </div>
-    </div>
-     <!-- Introduction -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Introduction</h3>
-        <p>This Power BI dashboard was developed to analyze subscription performance across an online learning platform with a data-driven approach. The analysis focuses on understanding user demand patterns by examining total subscriptions across multiple dimensions, including topic categories, technologies, instructors, difficulty levels, and individual course titles. The dataset contains more than 16 million subscriptions, enabling a robust descriptive analysis to identify dominant trends, distribution patterns, and potential business risks.
-          <p>The objective of this project is to transform raw subscription data into actionable insights by applying data modeling, aggregation logic, and interactive visualization techniques. The dashboard enables stakeholders to quickly assess performance drivers and detect concentration patterns within the platform.
-            </p>
-          <p>
-         </div>
-    </div>
-<!-- data set -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Online Course Subscription Analysis Dashboard</h3>
-
-        <div class="text-center my-4">
-  <img src="assets/img/portfolio/sales course BI.png" 
-       class="img-fluid rounded shadow" 
-       style="max-width: 100%;" 
-       alt="Tabel Of Sales">
-       </div>
-        </div>
-    </div>  
-  
-        <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Analytical Findings</h3>
-
-
-<p>The analysis reveals a strong concentration of subscriptions within the Programming category, which contributes approximately 55 percent of total subscriptions. 
-  This indicates that more than half of platform demand is centered around programming-related content. From a data perspective, this distribution highlights category dominance and suggests limited diversification across other knowledge domains. 
-  Artificial Intelligence and Machine Learning follow as secondary contributors, each accounting for roughly 10 percent of subscriptions, indicating emerging but not yet dominant demand segments.
-</p>
-<p>Technology-level analysis further reinforces this concentration pattern. Python overwhelmingly leads all other technologies in total subscriptions. The treemap visualization shows a significant gap between Python and other technology tags, demonstrating that Python acts as the primary demand driver within the platform ecosystem. 
-  This suggests a high correlation between programming-focused categories and Python-based courses. 
-  The dominance of a single technology may indicate strong market alignment but also introduces dependency risk if user preferences shift over time.
-</p>
-<p>Instructor-level aggregation uncovers a highly skewed distribution pattern consistent with the Pareto principle. One instructor contributes a disproportionately large share of total subscriptions compared to peers. 
-  This long-tail distribution suggests that platform performance is significantly influenced by a small number of high-performing instructors. 
-  From a data analysis standpoint, this pattern indicates performance inequality and signals the need for further investigation into instructor-level variables such as topic alignment, course difficulty, publishing frequency, or learner ratings.
-</p>
-<P>At the course title level, introductory courses generate the highest subscription volumes. “Introduction to Python” significantly outperforms all other courses, followed by intermediate-level Python content. 
-This pattern suggests that user acquisition primarily occurs at the beginner level, forming a top-heavy funnel structure. 
-The data implies strong entry-level demand but does not directly confirm progression rates to advanced courses, indicating an opportunity for further cohort or retention analysis.
-</P>
-</div>
-    </div>
-
-    <!-- BUSINESS VALUE -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Conclusion & Strategic Summary</h3>
-        <p>From an analytical perspective, the dataset demonstrates category and technology concentration, instructor performance imbalance, and strong beginner-level acquisition. 
-          These patterns suggest that while the platform exhibits clear product-market fit within programming education, it may face scalability risks if diversification strategies are not implemented.
-          <p>For decision-makers, these insights can inform content prioritization strategies, instructor performance evaluation frameworks, and learning path optimization. 
-            Additional analysis such as cohort retention, conversion tracking between course levels, and subscription lifecycle modeling would further strengthen strategic recommendations.
-          </p>
-          </p>
-      </div>
-    </div>   
-
-    <!-- Technical Implementation -->
-    <div class="row mb-5">
-      <div class="col-lg-12">
-        <h3>Technical Implementation</h3>
-        <p>This dashboard was built using Power BI with a structured data model that enables dynamic filtering across topic, technology, instructor, and difficulty dimensions. 
-          Aggregation measures were created to calculate total subscriptions and distribution percentages. 
-          Interactive slicers allow cross-dimensional analysis, enabling users to drill down into specific segments and detect performance variations. The visual design emphasizes clarity in distribution comparison through donut charts, treemaps, and ranked bar charts.
-          </p>
-      </div>
-    </div>   
-</section>
- <!-- end-->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -194,27 +271,14 @@ The data implies strong entry-level demand but does not directly confirm progres
         <a href="https://www.linkedin.com/in/haris-saputra-1b4807245"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span></div>
+        <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -225,10 +289,15 @@ The data implies strong entry-level demand but does not directly confirm progres
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    function switchLang(lang){
+      document.getElementById('btn-en').classList.toggle('active',lang==='en');
+      document.getElementById('btn-id').classList.toggle('active',lang==='id');
+      document.querySelectorAll('.lang-content').forEach(function(el){
+        el.classList.toggle('visible',el.getAttribute('data-lang')===lang);
+      });
+    }
+  </script>
 </body>
-
 </html>
