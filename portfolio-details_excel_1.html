@@ -1,167 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZGDD97NR9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0ZGDD97NR9');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0ZGDD97NR9');</script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portofolio Details - Sales Order Analysis</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-    /* Language Toggle */
-    .lang-toggle-wrapper {
-      display: flex; align-items: center; gap: 4px;
-      background: #f1f3f5; border-radius: 50px; padding: 4px; width: fit-content;
-    }
-    .lang-btn {
-      border: none; background: transparent; border-radius: 50px;
-      padding: 6px 18px; font-size: 0.85rem; font-weight: 600;
-      cursor: pointer; color: #6c757d; transition: all 0.2s ease;
-    }
-    .lang-btn.active { background: #1d6f42; color: #fff; box-shadow: 0 2px 8px rgba(29,111,66,0.3); }
-    .lang-btn:hover:not(.active) { background: #dee2e6; color: #212529; }
-    .lang-content { display: none; }
-    .lang-content.visible { display: block; }
-    span.lang-content.visible { display: inline; }
-
-    /* Content Styling */
-    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; color: #212529 !important; }
-    .step-card {
-      background: #f8f9fa; border-radius: 10px;
-      border-left: 4px solid #1d6f42; padding: 20px 24px; margin-bottom: 28px;
-      color: #212529 !important;
-    }
-    .step-card h5, .step-card h6, .step-card p, .step-card li { color: #212529 !important; }
-    .step-badge {
-      background: #1d6f42; color: #fff !important;
-      font-size: 0.75rem; font-weight: 700;
-      padding: 3px 12px; border-radius: 20px;
-      display: inline-block; margin-bottom: 10px;
-    }
-    .formula-box {
-      background: #212529; color: #f8f9fa;
-      border-radius: 8px; padding: 16px 20px;
-      font-family: monospace; font-size: 0.88rem;
-      margin: 12px 0; white-space: pre-wrap;
-    }
-    .insight-card {
-      background: #fff; border: 1px solid #dee2e6;
-      border-radius: 8px; padding: 16px 20px; margin-bottom: 14px;
-      color: #212529 !important;
-    }
-    .insight-card h5 { color: #1d6f42 !important; margin-bottom: 6px; }
-    .insight-card p, .insight-card li { color: #212529 !important; }
-    .highlight-box {
-      background: #d1e7dd; border-left: 4px solid #1d6f42;
-      border-radius: 6px; padding: 14px 18px;
-      font-size: 0.93rem; color: #212529 !important;
-    }
-    .highlight-box strong { color: #212529 !important; }
-    .info-card {
-      background: #f8f9fa; border-left: 4px solid #1d6f42;
-      border-radius: 6px; padding: 12px 16px; margin-bottom: 10px;
-    }
-    .info-card .label {
-      font-size: 0.75rem; color: #6c757d !important;
-      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px;
-    }
-    .info-card .value { font-size: 0.92rem; font-weight: 500; color: #212529 !important; }
-    .excel-hero {
-      background: linear-gradient(135deg, #1d6f4218, #1d6f4208);
-      border-radius: 12px; display: flex; align-items: center;
-      justify-content: center; height: 180px; margin-bottom: 24px;
-    }
-    .excel-hero i { font-size: 5rem; color: #1d6f42; opacity: 0.7; }
-
-    /* ===== TARGETED FIX: Dark text only inside light-background cards ===== */
-    /* These cards have white/light bg — text must be dark to be visible       */
-    .step-card,
-    .insight-card,
-    .finding-card,
-    .content-card,
-    .highlight-box,
-    .kpi-card,
-    .info-card {
-      color: #212529 !important;
-    }
-    .step-card *,
-    .insight-card *,
-    .finding-card *,
-    .content-card *,
-    .highlight-box *,
-    .kpi-card *,
-    .info-card * {
-      color: #212529 !important;
-    }
-    /* Re-apply accent colors for specific elements inside cards */
-    .insight-card h5 { color: #1d6f42 !important; }
-    .kpi-value { color: #1d6f42 !important; }
-    .step-badge { background: #1d6f42; color: #fff !important; }
-    .formula-box { background: #212529; color: #f8f9fa !important; }
-    .formula-box * { color: #f8f9fa !important; }
-    
-    /* Section title lines stay white (dark bg) but have accent border */
-    .section-title-line { border-left: 4px solid #1d6f42; padding-left: 12px; margin-bottom: 14px; }
-
-    /* Fix text outside cards on dark background */
-    .lang-content.visible > div > p,
-    .lang-content.visible > div > ul,
-    .lang-content.visible > div > ol,
-    .lang-content.visible > div > h2,
-    .lang-content.visible > div > h3,
-    .lang-content.visible > div > h4 {
-      color: #fff !important;
-    }
-
-    /* Re-override: text INSIDE cards must stay dark regardless of above rule */
-    .step-card p, .step-card ul, .step-card ol, .step-card li,
-    .step-card h5, .step-card h6, .step-card strong,
-    .insight-card p, .insight-card ul, .insight-card li,
-    .finding-card p, .finding-card ul, .finding-card li,
-    .content-card p, .content-card ul, .content-card li,
-    .highlight-box p, .highlight-box ul, .highlight-box li, .highlight-box strong,
-    .kpi-card p, .kpi-label,
-    .info-card p, .info-card .value, .info-card .label {
-      color: #212529 !important;
-    }
-  </style>
 </head>
 
 <body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Portofolio</h1>
-      </a>
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Portofolio</h1></a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -177,7 +37,6 @@
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -185,8 +44,8 @@
             <div class="col-lg-8">
               <h1>Portofolio Details</h1>
               <p class="mb-0">
-                <span class="lang-content visible" data-lang="en">Sales order analysis project focusing on order trends, top transactions, and salesperson performance using Microsoft Excel.</span>
-                <span class="lang-content" data-lang="id">Proyek analisis sales order berfokus pada tren pesanan, transaksi terbesar, dan kinerja salesperson menggunakan Microsoft Excel.</span>
+                <span class="lang-content visible" data-lang="en">Sales order analysis using Microsoft Excel — order trends, top transactions, and salesperson performance.</span>
+                <span class="lang-content" data-lang="id">Analisis sales order menggunakan Microsoft Excel — tren pesanan, transaksi terbesar, dan kinerja salesperson.</span>
               </p>
             </div>
           </div>
@@ -201,412 +60,467 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- LANGUAGE TOGGLE -->
-        <div class="d-flex align-items-center gap-3 mb-4">
-          <span style="font-size:0.85rem; color:#6c757d; font-weight:500;">
+        <div class="d-flex align-items-center gap-3 mb-5">
+          <span style="font-size:0.85rem;color:#adb5bd;font-weight:500;">
             <i class="bi bi-translate me-1"></i>Language / Bahasa:
           </span>
-          <div class="lang-toggle-wrapper">
-            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">🇬🇧 English</button>
-            <button class="lang-btn" id="btn-id" onclick="switchLang('id')">🇮🇩 Indonesia</button>
+          <div style="display:flex;gap:4px;background:#2b2b2b;border-radius:50px;padding:4px;">
+            <button id="btn-en" onclick="switchLang('en')"
+              style="border:none;border-radius:50px;padding:6px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;background:#1d6f42;color:#fff;">
+              🇬🇧 English
+            </button>
+            <button id="btn-id" onclick="switchLang('id')"
+              style="border:none;border-radius:50px;padding:6px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.2s;background:transparent;color:#adb5bd;">
+              🇮🇩 Indonesia
+            </button>
           </div>
         </div>
 
         <div class="row gy-4">
 
-          <!-- LEFT SIDEBAR -->
+          <!-- SIDEBAR -->
           <div class="col-lg-3">
-            <div class="excel-hero">
-              <i class="bi bi-file-earmark-spreadsheet"></i>
+            <div style="background:linear-gradient(135deg,#1d6f4222,#1d6f4210);border-radius:12px;display:flex;align-items:center;justify-content:center;height:160px;margin-bottom:20px;">
+              <i class="bi bi-file-earmark-spreadsheet" style="font-size:4.5rem;color:#1d6f42;opacity:0.8;"></i>
             </div>
 
-            <div class="info-card">
-              <div class="label"><i class="bi bi-tag me-1"></i><span class="lang-content visible" data-lang="en">Category</span><span class="lang-content" data-lang="id">Kategori</span></div>
-              <div class="value">Excel</div>
-            </div>
-            <div class="info-card">
-              <div class="label"><i class="bi bi-tools me-1"></i><span class="lang-content visible" data-lang="en">Tools</span><span class="lang-content" data-lang="id">Alat</span></div>
-              <div class="value">Microsoft Excel</div>
-            </div>
-            <div class="info-card">
-              <div class="label"><i class="bi bi-bar-chart me-1"></i><span class="lang-content visible" data-lang="en">Technique</span><span class="lang-content" data-lang="id">Teknik</span></div>
-              <div class="value">Array Formula, SUMPRODUCT, INDEX-MATCH</div>
-            </div>
-            <div class="info-card">
-              <div class="label"><i class="bi bi-database me-1"></i><span class="lang-content visible" data-lang="en">Data Size</span><span class="lang-content" data-lang="id">Ukuran Data</span></div>
-              <div class="value">800 <span class="lang-content visible" data-lang="en">records</span><span class="lang-content" data-lang="id">rekaman</span></div>
+            <div style="border-left:3px solid #1d6f42;padding:8px 14px;margin-bottom:10px;background:#1a1a1a;border-radius:0 6px 6px 0;">
+              <div style="font-size:0.72rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;">
+                <span class="lang-content visible" data-lang="en">Category</span>
+                <span class="lang-content" data-lang="id">Kategori</span>
+              </div>
+              <div style="color:#fff;font-weight:500;font-size:0.92rem;">Excel</div>
             </div>
 
-            <div class="mt-3">
-              <a href="portfolio.html" class="btn btn-outline-secondary w-100">
-                <i class="bi bi-arrow-left me-2"></i>
-                <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
-                <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
-              </a>
+            <div style="border-left:3px solid #1d6f42;padding:8px 14px;margin-bottom:10px;background:#1a1a1a;border-radius:0 6px 6px 0;">
+              <div style="font-size:0.72rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;">Tools</div>
+              <div style="color:#fff;font-weight:500;font-size:0.92rem;">Microsoft Excel</div>
             </div>
+
+            <div style="border-left:3px solid #1d6f42;padding:8px 14px;margin-bottom:10px;background:#1a1a1a;border-radius:0 6px 6px 0;">
+              <div style="font-size:0.72rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;">
+                <span class="lang-content visible" data-lang="en">Technique</span>
+                <span class="lang-content" data-lang="id">Teknik</span>
+              </div>
+              <div style="color:#fff;font-weight:500;font-size:0.9rem;">Array Formula, SUMPRODUCT, INDEX-MATCH</div>
+            </div>
+
+            <div style="border-left:3px solid #1d6f42;padding:8px 14px;margin-bottom:20px;background:#1a1a1a;border-radius:0 6px 6px 0;">
+              <div style="font-size:0.72rem;color:#6c757d;text-transform:uppercase;letter-spacing:0.05em;">
+                <span class="lang-content visible" data-lang="en">Data Size</span>
+                <span class="lang-content" data-lang="id">Ukuran Data</span>
+              </div>
+              <div style="color:#fff;font-weight:500;font-size:0.92rem;">
+                800 <span class="lang-content visible" data-lang="en">records</span><span class="lang-content" data-lang="id">rekaman</span>
+              </div>
+            </div>
+
+            <a href="portfolio.html" class="btn btn-outline-secondary w-100">
+              <i class="bi bi-arrow-left me-2"></i>
+              <span class="lang-content visible" data-lang="en">Back to Portfolio</span>
+              <span class="lang-content" data-lang="id">Kembali ke Portofolio</span>
+            </a>
           </div>
 
-          <!-- RIGHT CONTENT -->
+          <!-- MAIN CONTENT -->
           <div class="col-lg-9">
 
             <!-- ===== ENGLISH ===== -->
             <div class="lang-content visible" data-lang="en">
 
-              <h2 class="fw-bold mb-1">Sales Order Analysis & Summary Dashboard</h2>
-              <hr class="mb-4">
+              <h2 style="color:#fff;font-weight:700;" class="mb-1">Sales Order Analysis & Summary Dashboard</h2>
+              <hr class="mb-4" style="border-color:#2d2d2d;">
 
-              <!-- Project Overview -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Project Overview</h4>
-                <p>
-                  This project analyzes sales order data to extract meaningful insights related to top-value transactions,
-                  order volume by year, and total sales performance based on salesperson name initials.
-                  The analysis was conducted entirely using Microsoft Excel with advanced formulas and conditional logic.
-                </p>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3">Project Overview</h4>
+              <p style="color:#ccc;line-height:1.8;">
+                This project analyzes sales order data to extract meaningful insights related to top-value transactions,
+                order volume by year, and total sales performance based on salesperson name initials.
+                The analysis was conducted entirely using Microsoft Excel with advanced formulas and conditional logic.
+              </p>
 
-              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Table of Sales" class="img-fluid rounded shadow d-block mx-auto mb-5" style="max-width:100%;">
+              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Table of Sales" class="img-fluid rounded shadow d-block mx-auto my-4" style="max-width:100%;">
 
-              <!-- Objectives -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Objectives</h4>
-                <ul>
-                  <li>Identify the top two highest-value orders for each salesperson</li>
-                  <li>Calculate the total number of orders for specific years</li>
-                  <li>Analyze total sales based on salesperson initials and selected years</li>
-                </ul>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Objectives</h4>
+              <ul style="color:#ccc;line-height:2;">
+                <li>Identify the top two highest-value orders for each salesperson</li>
+                <li>Calculate the total number of orders for specific years</li>
+                <li>Analyze total sales based on salesperson initials and selected years</li>
+              </ul>
 
-              <!-- Step-by-Step -->
-              <h4 class="section-title-line mb-4">Step-by-Step Analysis Process</h4>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4 mt-4">Step-by-Step Analysis Process</h4>
 
-              <!-- Step 1 -->
-              <div class="step-card">
-                <span class="step-badge">Step 1</span>
-                <h5 class="fw-bold">Order IDs for Top Two Orders per Salesperson</h5>
-                <p>The first analysis identifies the Order IDs corresponding to the top two highest order amounts for each salesperson.</p>
-                <p><strong>Excel Formula:</strong></p>
-                <div class="formula-box">=IFERROR(
+              <!-- STEP 1 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:36px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Step 1</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Order IDs for Top Two Orders per Salesperson</h5>
+                <p style="color:#ccc;line-height:1.8;">The first analysis identifies the Order IDs corresponding to the top two highest order amounts for each salesperson.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Excel Formula:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;overflow-x:auto;">=IFERROR(
   INDEX($E$3:$E$801,
     MATCH(
       LARGE((I4=$C$3:$C$801)*$F$3:$F$801, ROW(A1)),
       $F$3:$F$801, 0)
-  ), "-")</div>
+  ), "-")</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-2.png" alt="Step 1 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
-                <ul>
-                  <li><strong>(I4 = $C$3:$C$801)</strong> — Filters the dataset to only include records matching the selected salesperson.</li>
-                  <li><strong>* $F$3:$F$801</strong> — Multiplies filtered results with order amounts, retaining only relevant sales values.</li>
-                  <li><strong>LARGE(..., ROW(A1))</strong> — Extracts the 1st and 2nd largest order values dynamically.</li>
-                  <li><strong>MATCH(...)</strong> — Identifies the exact position of the selected order amounts in the dataset.</li>
-                  <li><strong>INDEX(...)</strong> — Returns the corresponding Order ID based on the matched position.</li>
-                  <li><strong>IFERROR()</strong> — Prevents errors when fewer than two orders exist for a salesperson.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Outcome:</strong> Successfully identified the top two highest-value transactions for each salesperson, enabling quick recognition of high-impact sales.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Formula Breakdown:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Component</th>
+                      <th style="color:#fff;">Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">(I4 = $C$3:$C$801)</td><td style="color:#ccc;">Filters the dataset to only include records matching the selected salesperson.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">* $F$3:$F$801</td><td style="color:#ccc;">Multiplies filtered results with order amounts, retaining only relevant sales values.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">LARGE(..., ROW(A1))</td><td style="color:#ccc;">Extracts the 1st and 2nd largest order values dynamically.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">MATCH(...)</td><td style="color:#ccc;">Identifies the exact position of the selected order amounts in the dataset.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">INDEX(...)</td><td style="color:#ccc;">Returns the corresponding Order ID based on the matched position.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">IFERROR()</td><td style="color:#ccc;">Prevents errors when fewer than two orders exist for a salesperson.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Outcome:</strong> Successfully identified the top two highest-value transactions for each salesperson, enabling quick recognition of high-impact sales.
+                </p>
               </div>
 
-              <!-- Step 2 -->
-              <div class="step-card">
-                <span class="step-badge">Step 2</span>
-                <h5 class="fw-bold">Total Number of Orders by Year</h5>
-                <p>The second analysis calculates the total number of orders for specific years based on the order date.</p>
-                <p><strong>Excel Formula:</strong></p>
-                <div class="formula-box">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</div>
+              <!-- STEP 2 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:36px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Step 2</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Total Number of Orders by Year</h5>
+                <p style="color:#ccc;line-height:1.8;">The second analysis calculates the total number of orders for specific years based on the order date.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Excel Formula:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-3.png" alt="Step 2 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
-                <ul>
-                  <li><strong>YEAR(Order_Date)</strong> — Extracts the year from each order date.</li>
-                  <li><strong>=H12</strong> — Filters orders by the selected year.</li>
-                  <li><strong>SUMPRODUCT(--())</strong> — Converts TRUE/FALSE results into numeric counts.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Outcome:</strong> Generated a clear comparison of order volume across different years, highlighting fluctuations in sales activity over time.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Formula Breakdown:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Component</th>
+                      <th style="color:#fff;">Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">YEAR(Order_Date)</td><td style="color:#ccc;">Extracts the year from each order date.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">=H12</td><td style="color:#ccc;">Filters orders by the selected year.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">SUMPRODUCT(--())</td><td style="color:#ccc;">Converts TRUE/FALSE results into numeric counts.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Outcome:</strong> Generated a clear comparison of order volume across different years, highlighting fluctuations in sales activity over time.
+                </p>
               </div>
 
-              <!-- Step 3 -->
-              <div class="step-card">
-                <span class="step-badge">Step 3</span>
-                <h5 class="fw-bold">Total Sales by Salesperson Initial and Year</h5>
-                <p>The final analysis calculates total sales amounts for salespeople whose names start with a specific letter in selected years.</p>
-                <p><strong>Excel Formula:</strong></p>
-                <div class="formula-box">=SUMPRODUCT(
+              <!-- STEP 3 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:40px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Step 3</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Total Sales by Salesperson Initial and Year</h5>
+                <p style="color:#ccc;line-height:1.8;">The final analysis calculates total sales amounts for salespeople whose names start with a specific letter in selected years.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Excel Formula:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;overflow-x:auto;">=SUMPRODUCT(
   --(LEFT(Salesperson,1)=$H20),
   --(YEAR(Order_Date)=I$19),
-  Order_Amount)</div>
+  Order_Amount)</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-4.png" alt="Step 3 Result" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Formula Breakdown:</h6>
-                <ul>
-                  <li><strong>LEFT(Salesperson,1)</strong> — Extracts the first letter of each salesperson's name.</li>
-                  <li><strong>=$H20</strong> — Filters by the selected initial (e.g., C, L, S).</li>
-                  <li><strong>YEAR(Order_Date)=I$19</strong> — Filters by year.</li>
-                  <li><strong>SUMPRODUCT()</strong> — Sums the order amounts that meet all conditions.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Outcome:</strong> Enabled grouped performance analysis based on salesperson initials and yearly trends.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Formula Breakdown:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Component</th>
+                      <th style="color:#fff;">Explanation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">LEFT(Salesperson,1)</td><td style="color:#ccc;">Extracts the first letter of each salesperson's name.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">=$H20</td><td style="color:#ccc;">Filters by the selected initial (e.g., C, L, S).</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">YEAR(Order_Date)=I$19</td><td style="color:#ccc;">Filters by year.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">SUMPRODUCT()</td><td style="color:#ccc;">Sums the order amounts that meet all conditions.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Outcome:</strong> Enabled grouped performance analysis based on salesperson initials and yearly trends.
+                </p>
               </div>
 
-              <!-- Results & Insights -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Results & Insights</h4>
+              <!-- RESULTS -->
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4">Results & Insights</h4>
 
-                <h5 class="fw-bold mt-3">Top Two Orders per Salesperson</h5>
-                <p>The analysis successfully identified the top two highest-value orders for each salesperson. Salespeople such as Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, and Suyama recorded two significant high-value orders. Meanwhile, King and Peacock did not have qualifying top-ranked orders in the dataset, indicating either lower transaction values or limited order activity during the observed period.</p>
+              <h5 style="color:#fff;" class="mt-3 mb-2">Top Two Orders per Salesperson</h5>
+              <p style="color:#ccc;line-height:1.8;">The analysis successfully identified the top two highest-value orders for each salesperson. Salespeople such as Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, and Suyama recorded two significant high-value orders. King and Peacock did not have qualifying top-ranked orders, indicating lower transaction values or limited order activity.</p>
 
-                <h5 class="fw-bold mt-3">Number of Orders by Year</h5>
-                <p>The total number of orders per year shows noticeable fluctuation:</p>
-                <ol>
-                  <li><strong>2004 → 399 orders</strong> (Highest)</li>
-                  <li>2005 → 257 orders</li>
-                  <li>2003 → 143 orders (Lowest)</li>
-                </ol>
-                <p>There was a significant increase from 2003 to 2004, followed by a decline in 2005.</p>
+              <h5 style="color:#fff;" class="mt-4 mb-2">Number of Orders by Year</h5>
+              <p style="color:#ccc;line-height:1.8;">Total orders per year show noticeable fluctuation:</p>
+              <ol style="color:#ccc;line-height:2;">
+                <li><strong style="color:#fff;">2004 → 399 orders</strong> (Highest)</li>
+                <li>2005 → 257 orders</li>
+                <li>2003 → 143 orders (Lowest)</li>
+              </ol>
+              <p style="color:#ccc;">Significant increase from 2003 to 2004, followed by a decline in 2005.</p>
 
-                <h5 class="fw-bold mt-3">Total Sales by Initial Letter of Salesperson</h5>
-                <p>Sales performance grouped by the first letter of salesperson names:</p>
-                <div class="row g-3 mb-3">
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2003</h5>
-                      <p>C → $34,392.86<br><strong>L → $69,169.07 ⭐</strong><br>S → $14,519.68</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2004</h5>
-                      <p>C → $116,781.21<br><strong>L → $235,384.63 ⭐</strong><br>S → $40,826.37</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2005</h5>
-                      <p>C → $88,821.59<br><strong>L → $130,416.25 ⭐</strong><br>S → $17,181.58</p>
-                    </div>
-                  </div>
-                </div>
-                <p>Across all years, salespeople whose names start with <strong>"L"</strong> consistently generated the highest total sales.</p>
-              </div>
+              <h5 style="color:#fff;" class="mt-4 mb-3">Total Sales by Initial Letter of Salesperson</h5>
+              <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                <thead style="background:#1d6f42;">
+                  <tr>
+                    <th style="color:#fff;">Initial</th>
+                    <th style="color:#fff;">2003</th>
+                    <th style="color:#fff;">2004</th>
+                    <th style="color:#fff;">2005</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style="color:#ccc;">C</td><td style="color:#ccc;">$34,392.86</td><td style="color:#ccc;">$116,781.21</td><td style="color:#ccc;">$88,821.59</td></tr>
+                  <tr style="background:#1a2e1a;"><td style="color:#a8ff78;font-weight:700;">L ⭐</td><td style="color:#a8ff78;font-weight:700;">$69,169.07</td><td style="color:#a8ff78;font-weight:700;">$235,384.63</td><td style="color:#a8ff78;font-weight:700;">$130,416.25</td></tr>
+                  <tr><td style="color:#ccc;">S</td><td style="color:#ccc;">$14,519.68</td><td style="color:#ccc;">$40,826.37</td><td style="color:#ccc;">$17,181.58</td></tr>
+                </tbody>
+              </table>
+              <p style="color:#ccc;">Across all years, salespeople with initial <strong style="color:#fff;">"L"</strong> consistently generated the highest total sales.</p>
 
-              <!-- Key Insights -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Key Insights</h4>
-                <div class="insight-card"><h5>1. Peak Operational Year: 2004</h5><p>2004 recorded the highest number of transactions (399 orders), indicating strong operational activity and market demand during that year.</p></div>
-                <div class="insight-card"><h5>2. Sales Contribution Concentration</h5><p>Sales performance is heavily concentrated among specific individuals. The <strong>"L" group</strong> dominates total sales in all observed years.</p></div>
-                <div class="insight-card"><h5>3. Performance Disparity</h5><p>The gap between groups is significant. In 2004, the <strong>"L"</strong> group generated more than <strong>5x</strong> the revenue of the <strong>"S"</strong> group.</p></div>
-                <div class="insight-card"><h5>4. Strategic Implication</h5><ul><li>Sales performance evaluation</li><li>Incentive program design</li><li>Targeted coaching for lower-performing groups</li><li>Resource allocation planning</li></ul></div>
-                <div class="insight-card"><h5>5. Data-Driven Monitoring</h5><p>The use of advanced Excel formulas such as Array Formulas and <strong>SUMPRODUCT</strong> enables scalable performance tracking for future datasets without manual filtering.</p></div>
-              </div>
+              <!-- KEY INSIGHTS -->
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4 mt-4">Key Insights</h4>
+              <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                <thead style="background:#1d6f42;">
+                  <tr>
+                    <th style="color:#fff;width:30%;">Insight</th>
+                    <th style="color:#fff;">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style="color:#fff;font-weight:600;">Peak Year: 2004</td><td style="color:#ccc;">399 orders — strongest operational activity and market demand.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Sales Concentration</td><td style="color:#ccc;">The <strong style="color:#a8ff78;">"L" group</strong> dominates total sales consistently across all years.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Performance Disparity</td><td style="color:#ccc;">In 2004, "L" generated more than <strong style="color:#a8ff78;">5×</strong> the revenue of "S".</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Strategic Implications</td><td style="color:#ccc;">Performance evaluation, incentive programs, targeted coaching, resource allocation.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Scalable Monitoring</td><td style="color:#ccc;">SUMPRODUCT & Array Formulas enable future datasets to be tracked without manual filtering.</td></tr>
+                </tbody>
+              </table>
 
-              <!-- Business Value -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Business Value</h4>
-                <p>This analysis helps management quickly identify top-performing sales transactions, monitor yearly trends, and evaluate grouped sales performance. The approach reduces manual reporting and supports data-driven decision making.</p>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Business Value</h4>
+              <p style="color:#ccc;line-height:1.8;">This analysis helps management quickly identify top-performing sales transactions, monitor yearly trends, and evaluate grouped sales performance. The approach reduces manual reporting and supports data-driven decision making.</p>
 
-              <!-- Tools -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Tools & Skills Used</h4>
-                <ul>
-                  <li>Microsoft Excel</li>
-                  <li>Array formulas & SUMPRODUCT</li>
-                  <li>Date and text-based data filtering</li>
-                  <li>Analytical problem-solving</li>
-                </ul>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Tools & Skills Used</h4>
+              <ul style="color:#ccc;line-height:2;">
+                <li>Microsoft Excel</li>
+                <li>Array formulas & SUMPRODUCT</li>
+                <li>Date and text-based data filtering</li>
+                <li>Analytical problem-solving</li>
+              </ul>
 
-            </div>
-            <!-- ===== END ENGLISH ===== -->
+            </div><!-- END ENGLISH -->
 
             <!-- ===== BAHASA INDONESIA ===== -->
             <div class="lang-content" data-lang="id">
 
-              <h2 class="fw-bold mb-1">Analisis Sales Order & Dashboard Ringkasan</h2>
-              <hr class="mb-4">
+              <h2 style="color:#fff;font-weight:700;" class="mb-1">Analisis Sales Order & Dashboard Ringkasan</h2>
+              <hr class="mb-4" style="border-color:#2d2d2d;">
 
-              <!-- Project Overview -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Gambaran Proyek</h4>
-                <p>
-                  Proyek ini menganalisis data sales order untuk menghasilkan wawasan bermakna terkait transaksi bernilai tertinggi,
-                  volume pesanan per tahun, dan kinerja penjualan berdasarkan inisial nama salesperson.
-                  Analisis dilakukan sepenuhnya menggunakan Microsoft Excel dengan rumus lanjutan dan logika kondisional.
-                </p>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3">Gambaran Proyek</h4>
+              <p style="color:#ccc;line-height:1.8;">
+                Proyek ini menganalisis data sales order untuk menghasilkan wawasan bermakna terkait transaksi bernilai tertinggi,
+                volume pesanan per tahun, dan kinerja penjualan berdasarkan inisial nama salesperson.
+                Analisis dilakukan sepenuhnya menggunakan Microsoft Excel dengan rumus lanjutan dan logika kondisional.
+              </p>
 
-              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Tabel Penjualan" class="img-fluid rounded shadow d-block mx-auto mb-5" style="max-width:100%;">
+              <img src="assets/img/portfolio/porto-excel-1-1.png" alt="Tabel Penjualan" class="img-fluid rounded shadow d-block mx-auto my-4" style="max-width:100%;">
 
-              <!-- Objectives -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Tujuan Analisis</h4>
-                <ul>
-                  <li>Mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson</li>
-                  <li>Menghitung total jumlah pesanan untuk tahun tertentu</li>
-                  <li>Menganalisis total penjualan berdasarkan inisial nama salesperson dan tahun yang dipilih</li>
-                </ul>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Tujuan Analisis</h4>
+              <ul style="color:#ccc;line-height:2;">
+                <li>Mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson</li>
+                <li>Menghitung total jumlah pesanan untuk tahun tertentu</li>
+                <li>Menganalisis total penjualan berdasarkan inisial nama salesperson dan tahun yang dipilih</li>
+              </ul>
 
-              <!-- Step-by-Step -->
-              <h4 class="section-title-line mb-4">Proses Analisis Langkah demi Langkah</h4>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4 mt-4">Proses Analisis Langkah demi Langkah</h4>
 
-              <!-- Step 1 -->
-              <div class="step-card">
-                <span class="step-badge">Langkah 1</span>
-                <h5 class="fw-bold">Order ID untuk Dua Pesanan Teratas per Salesperson</h5>
-                <p>Analisis pertama mengidentifikasi Order ID yang berhubungan dengan dua nilai pesanan tertinggi untuk setiap salesperson.</p>
-                <p><strong>Rumus Excel:</strong></p>
-                <div class="formula-box">=IFERROR(
+              <!-- LANGKAH 1 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:36px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Langkah 1</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Order ID untuk Dua Pesanan Teratas per Salesperson</h5>
+                <p style="color:#ccc;line-height:1.8;">Analisis pertama mengidentifikasi Order ID yang berhubungan dengan dua nilai pesanan tertinggi untuk setiap salesperson.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Rumus Excel:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;overflow-x:auto;">=IFERROR(
   INDEX($E$3:$E$801,
     MATCH(
       LARGE((I4=$C$3:$C$801)*$F$3:$F$801, ROW(A1)),
       $F$3:$F$801, 0)
-  ), "-")</div>
+  ), "-")</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-2.png" alt="Hasil Langkah 1" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
-                <ul>
-                  <li><strong>(I4 = $C$3:$C$801)</strong> — Memfilter dataset agar hanya mencakup data yang cocok dengan salesperson yang dipilih.</li>
-                  <li><strong>* $F$3:$F$801</strong> — Mengalikan hasil filter dengan nilai pesanan, hanya menyimpan nilai penjualan yang relevan.</li>
-                  <li><strong>LARGE(..., ROW(A1))</strong> — Mengambil nilai pesanan terbesar pertama dan kedua secara dinamis.</li>
-                  <li><strong>MATCH(...)</strong> — Mengidentifikasi posisi tepat dari nilai pesanan yang dipilih dalam dataset.</li>
-                  <li><strong>INDEX(...)</strong> — Mengembalikan Order ID yang sesuai berdasarkan posisi yang ditemukan.</li>
-                  <li><strong>IFERROR()</strong> — Mencegah error ketika salesperson memiliki kurang dari dua pesanan.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Hasil:</strong> Berhasil mengidentifikasi dua transaksi bernilai tertinggi untuk setiap salesperson, memungkinkan pengenalan cepat terhadap penjualan berdampak tinggi.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Penjelasan Rumus:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Komponen</th>
+                      <th style="color:#fff;">Penjelasan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">(I4 = $C$3:$C$801)</td><td style="color:#ccc;">Memfilter dataset agar hanya mencakup data yang cocok dengan salesperson yang dipilih.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">* $F$3:$F$801</td><td style="color:#ccc;">Mengalikan hasil filter dengan nilai pesanan, hanya menyimpan nilai penjualan yang relevan.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">LARGE(..., ROW(A1))</td><td style="color:#ccc;">Mengambil nilai pesanan terbesar pertama dan kedua secara dinamis.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">MATCH(...)</td><td style="color:#ccc;">Mengidentifikasi posisi tepat dari nilai pesanan yang dipilih dalam dataset.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">INDEX(...)</td><td style="color:#ccc;">Mengembalikan Order ID yang sesuai berdasarkan posisi yang ditemukan.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">IFERROR()</td><td style="color:#ccc;">Mencegah error ketika salesperson memiliki kurang dari dua pesanan.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Hasil:</strong> Berhasil mengidentifikasi dua transaksi bernilai tertinggi untuk setiap salesperson, memungkinkan pengenalan cepat terhadap penjualan berdampak tinggi.
+                </p>
               </div>
 
-              <!-- Step 2 -->
-              <div class="step-card">
-                <span class="step-badge">Langkah 2</span>
-                <h5 class="fw-bold">Total Jumlah Pesanan per Tahun</h5>
-                <p>Analisis kedua menghitung total jumlah pesanan untuk tahun tertentu berdasarkan tanggal pesanan.</p>
-                <p><strong>Rumus Excel:</strong></p>
-                <div class="formula-box">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</div>
+              <!-- LANGKAH 2 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:36px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Langkah 2</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Total Jumlah Pesanan per Tahun</h5>
+                <p style="color:#ccc;line-height:1.8;">Analisis kedua menghitung total jumlah pesanan untuk tahun tertentu berdasarkan tanggal pesanan.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Rumus Excel:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;">=SUMPRODUCT(--(YEAR(Order_Date)=H12))</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-3.png" alt="Hasil Langkah 2" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
-                <ul>
-                  <li><strong>YEAR(Order_Date)</strong> — Mengekstrak tahun dari setiap tanggal pesanan.</li>
-                  <li><strong>=H12</strong> — Memfilter pesanan berdasarkan tahun yang dipilih.</li>
-                  <li><strong>SUMPRODUCT(--())</strong> — Mengubah hasil TRUE/FALSE menjadi hitungan numerik.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Hasil:</strong> Menghasilkan perbandingan volume pesanan yang jelas antar tahun, menyoroti fluktuasi aktivitas penjualan dari waktu ke waktu.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Penjelasan Rumus:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Komponen</th>
+                      <th style="color:#fff;">Penjelasan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">YEAR(Order_Date)</td><td style="color:#ccc;">Mengekstrak tahun dari setiap tanggal pesanan.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">=H12</td><td style="color:#ccc;">Memfilter pesanan berdasarkan tahun yang dipilih.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">SUMPRODUCT(--())</td><td style="color:#ccc;">Mengubah hasil TRUE/FALSE menjadi hitungan numerik.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Hasil:</strong> Menghasilkan perbandingan volume pesanan yang jelas antar tahun, menyoroti fluktuasi aktivitas penjualan dari waktu ke waktu.
+                </p>
               </div>
 
-              <!-- Step 3 -->
-              <div class="step-card">
-                <span class="step-badge">Langkah 3</span>
-                <h5 class="fw-bold">Total Penjualan berdasarkan Inisial Salesperson dan Tahun</h5>
-                <p>Analisis terakhir menghitung total penjualan untuk salesperson yang namanya diawali huruf tertentu pada tahun yang dipilih.</p>
-                <p><strong>Rumus Excel:</strong></p>
-                <div class="formula-box">=SUMPRODUCT(
+              <!-- LANGKAH 3 -->
+              <div style="border-top:2px solid #1d6f42;padding-top:20px;margin-bottom:40px;">
+                <p style="color:#1d6f42;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Langkah 3</p>
+                <h5 style="color:#fff;font-weight:600;" class="mb-3">Total Penjualan berdasarkan Inisial Salesperson dan Tahun</h5>
+                <p style="color:#ccc;line-height:1.8;">Analisis terakhir menghitung total penjualan untuk salesperson yang namanya diawali huruf tertentu pada tahun yang dipilih.</p>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:6px;">Rumus Excel:</p>
+                <pre style="background:#0d0d0d;color:#a8ff78;border-radius:8px;padding:16px 20px;font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.6;border:1px solid #2d2d2d;overflow-x:auto;">=SUMPRODUCT(
   --(LEFT(Salesperson,1)=$H20),
   --(YEAR(Order_Date)=I$19),
-  Order_Amount)</div>
+  Order_Amount)</pre>
+
                 <img src="assets/img/portfolio/porto-excel-1-4.png" alt="Hasil Langkah 3" class="img-fluid rounded shadow d-block mx-auto my-3" style="max-width:85%;">
-                <h6 class="fw-bold mt-3">Penjelasan Rumus:</h6>
-                <ul>
-                  <li><strong>LEFT(Salesperson,1)</strong> — Mengambil huruf pertama dari nama setiap salesperson.</li>
-                  <li><strong>=$H20</strong> — Memfilter berdasarkan inisial yang dipilih (misal: C, L, S).</li>
-                  <li><strong>YEAR(Order_Date)=I$19</strong> — Memfilter berdasarkan tahun.</li>
-                  <li><strong>SUMPRODUCT()</strong> — Menjumlahkan nilai pesanan yang memenuhi semua kondisi.</li>
-                </ul>
-                <div class="highlight-box mt-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <strong>Hasil:</strong> Memungkinkan analisis kinerja berkelompok berdasarkan inisial salesperson dan tren tahunan.
-                </div>
+
+                <p style="color:#adb5bd;font-weight:600;margin-bottom:10px;">Penjelasan Rumus:</p>
+                <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                  <thead style="background:#1d6f42;">
+                    <tr>
+                      <th style="color:#fff;width:35%;">Komponen</th>
+                      <th style="color:#fff;">Penjelasan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">LEFT(Salesperson,1)</td><td style="color:#ccc;">Mengambil huruf pertama dari nama setiap salesperson.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">=$H20</td><td style="color:#ccc;">Memfilter berdasarkan inisial yang dipilih (misal: C, L, S).</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">YEAR(Order_Date)=I$19</td><td style="color:#ccc;">Memfilter berdasarkan tahun.</td></tr>
+                    <tr><td style="color:#a8ff78;font-family:monospace;">SUMPRODUCT()</td><td style="color:#ccc;">Menjumlahkan nilai pesanan yang memenuhi semua kondisi.</td></tr>
+                  </tbody>
+                </table>
+                <p style="color:#ccc;background:#1a2e1a;border-left:4px solid #1d6f42;padding:12px 16px;border-radius:0 6px 6px 0;margin-top:12px;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:#1d6f42;"></i>
+                  <strong style="color:#fff;">Hasil:</strong> Memungkinkan analisis kinerja berkelompok berdasarkan inisial salesperson dan tren tahunan.
+                </p>
               </div>
 
-              <!-- Results & Insights -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Hasil & Wawasan</h4>
+              <!-- HASIL -->
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4">Hasil & Wawasan</h4>
 
-                <h5 class="fw-bold mt-3">Dua Pesanan Teratas per Salesperson</h5>
-                <p>Analisis berhasil mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson. Salesperson seperti Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, dan Suyama mencatatkan dua pesanan bernilai signifikan. Sementara itu, King dan Peacock tidak memiliki pesanan peringkat teratas dalam dataset, mengindikasikan nilai transaksi yang lebih rendah atau aktivitas pesanan yang terbatas.</p>
+              <h5 style="color:#fff;" class="mt-3 mb-2">Dua Pesanan Teratas per Salesperson</h5>
+              <p style="color:#ccc;line-height:1.8;">Analisis berhasil mengidentifikasi dua pesanan bernilai tertinggi untuk setiap salesperson. Salesperson seperti Fuller, Davolio, Dodsworth, Leverling, Buchanan, Callahan, dan Suyama mencatatkan dua pesanan bernilai signifikan. King dan Peacock tidak memiliki pesanan peringkat teratas, mengindikasikan nilai transaksi lebih rendah atau aktivitas terbatas.</p>
 
-                <h5 class="fw-bold mt-3">Jumlah Pesanan per Tahun</h5>
-                <p>Total jumlah pesanan per tahun menunjukkan fluktuasi yang mencolok:</p>
-                <ol>
-                  <li><strong>2004 → 399 pesanan</strong> (Tertinggi)</li>
-                  <li>2005 → 257 pesanan</li>
-                  <li>2003 → 143 pesanan (Terendah)</li>
-                </ol>
-                <p>Terjadi peningkatan signifikan dari 2003 ke 2004, diikuti penurunan pada 2005.</p>
+              <h5 style="color:#fff;" class="mt-4 mb-2">Jumlah Pesanan per Tahun</h5>
+              <p style="color:#ccc;line-height:1.8;">Total pesanan per tahun menunjukkan fluktuasi yang mencolok:</p>
+              <ol style="color:#ccc;line-height:2;">
+                <li><strong style="color:#fff;">2004 → 399 pesanan</strong> (Tertinggi)</li>
+                <li>2005 → 257 pesanan</li>
+                <li>2003 → 143 pesanan (Terendah)</li>
+              </ol>
+              <p style="color:#ccc;">Peningkatan signifikan dari 2003 ke 2004, diikuti penurunan pada 2005.</p>
 
-                <h5 class="fw-bold mt-3">Total Penjualan berdasarkan Inisial Salesperson</h5>
-                <p>Kinerja penjualan yang dikelompokkan berdasarkan huruf pertama nama salesperson:</p>
-                <div class="row g-3 mb-3">
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2003</h5>
-                      <p>C → $34,392.86<br><strong>L → $69,169.07 ⭐</strong><br>S → $14,519.68</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2004</h5>
-                      <p>C → $116,781.21<br><strong>L → $235,384.63 ⭐</strong><br>S → $40,826.37</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="insight-card">
-                      <h5>2005</h5>
-                      <p>C → $88,821.59<br><strong>L → $130,416.25 ⭐</strong><br>S → $17,181.58</p>
-                    </div>
-                  </div>
-                </div>
-                <p>Di semua tahun, salesperson dengan nama berinisial <strong>"L"</strong> secara konsisten menghasilkan total penjualan tertinggi.</p>
-              </div>
+              <h5 style="color:#fff;" class="mt-4 mb-3">Total Penjualan berdasarkan Inisial Salesperson</h5>
+              <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                <thead style="background:#1d6f42;">
+                  <tr>
+                    <th style="color:#fff;">Inisial</th>
+                    <th style="color:#fff;">2003</th>
+                    <th style="color:#fff;">2004</th>
+                    <th style="color:#fff;">2005</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style="color:#ccc;">C</td><td style="color:#ccc;">$34,392.86</td><td style="color:#ccc;">$116,781.21</td><td style="color:#ccc;">$88,821.59</td></tr>
+                  <tr style="background:#1a2e1a;"><td style="color:#a8ff78;font-weight:700;">L ⭐</td><td style="color:#a8ff78;font-weight:700;">$69,169.07</td><td style="color:#a8ff78;font-weight:700;">$235,384.63</td><td style="color:#a8ff78;font-weight:700;">$130,416.25</td></tr>
+                  <tr><td style="color:#ccc;">S</td><td style="color:#ccc;">$14,519.68</td><td style="color:#ccc;">$40,826.37</td><td style="color:#ccc;">$17,181.58</td></tr>
+                </tbody>
+              </table>
+              <p style="color:#ccc;">Di semua tahun, salesperson berinisial <strong style="color:#fff;">"L"</strong> secara konsisten menghasilkan total penjualan tertinggi.</p>
 
-              <!-- Key Insights -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Insight Utama</h4>
-                <div class="insight-card"><h5>1. Tahun Operasional Puncak: 2004</h5><p>Tahun 2004 mencatat jumlah transaksi tertinggi (399 pesanan), menunjukkan aktivitas operasional dan permintaan pasar yang kuat pada tahun tersebut.</p></div>
-                <div class="insight-card"><h5>2. Konsentrasi Kontribusi Penjualan</h5><p>Kinerja penjualan sangat terkonsentrasi pada individu tertentu. Kelompok <strong>"L"</strong> mendominasi total penjualan di semua tahun yang diamati.</p></div>
-                <div class="insight-card"><h5>3. Kesenjangan Kinerja</h5><p>Selisih antar kelompok sangat signifikan. Pada 2004, kelompok <strong>"L"</strong> menghasilkan lebih dari <strong>5x</strong> pendapatan kelompok <strong>"S"</strong>.</p></div>
-                <div class="insight-card"><h5>4. Implikasi Strategis</h5><ul><li>Evaluasi kinerja penjualan</li><li>Desain program insentif</li><li>Pelatihan terarah untuk kelompok berkinerja rendah</li><li>Perencanaan alokasi sumber daya</li></ul></div>
-                <div class="insight-card"><h5>5. Pemantauan Berbasis Data</h5><p>Penggunaan rumus Excel lanjutan seperti Array Formula dan <strong>SUMPRODUCT</strong> memungkinkan pelacakan kinerja yang skalabel untuk dataset masa depan tanpa filter manual.</p></div>
-              </div>
+              <!-- INSIGHT UTAMA -->
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-4 mt-4">Insight Utama</h4>
+              <table class="table table-dark table-bordered" style="font-size:0.88rem;">
+                <thead style="background:#1d6f42;">
+                  <tr>
+                    <th style="color:#fff;width:30%;">Insight</th>
+                    <th style="color:#fff;">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td style="color:#fff;font-weight:600;">Tahun Puncak: 2004</td><td style="color:#ccc;">399 pesanan — aktivitas operasional dan permintaan pasar paling kuat.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Konsentrasi Penjualan</td><td style="color:#ccc;">Kelompok <strong style="color:#a8ff78;">"L"</strong> mendominasi total penjualan di semua tahun.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Kesenjangan Kinerja</td><td style="color:#ccc;">Pada 2004, "L" menghasilkan lebih dari <strong style="color:#a8ff78;">5×</strong> pendapatan "S".</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Implikasi Strategis</td><td style="color:#ccc;">Evaluasi kinerja, program insentif, pelatihan terarah, alokasi sumber daya.</td></tr>
+                  <tr><td style="color:#fff;font-weight:600;">Pemantauan Skalabel</td><td style="color:#ccc;">SUMPRODUCT & Array Formula memungkinkan pelacakan dataset masa depan tanpa filter manual.</td></tr>
+                </tbody>
+              </table>
 
-              <!-- Business Value -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Nilai Bisnis</h4>
-                <p>Analisis ini membantu manajemen mengidentifikasi transaksi penjualan terbaik dengan cepat, memantau tren tahunan, dan mengevaluasi kinerja penjualan berkelompok. Pendekatan ini mengurangi pelaporan manual dan mendukung pengambilan keputusan berbasis data.</p>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Nilai Bisnis</h4>
+              <p style="color:#ccc;line-height:1.8;">Analisis ini membantu manajemen mengidentifikasi transaksi penjualan terbaik, memantau tren tahunan, dan mengevaluasi kinerja penjualan berkelompok. Pendekatan ini mengurangi pelaporan manual dan mendukung pengambilan keputusan berbasis data.</p>
 
-              <!-- Tools -->
-              <div class="mb-4">
-                <h4 class="section-title-line">Alat & Skill yang Digunakan</h4>
-                <ul>
-                  <li>Microsoft Excel</li>
-                  <li>Array Formula & SUMPRODUCT</li>
-                  <li>Filter data berbasis tanggal dan teks</li>
-                  <li>Pemecahan masalah analitis</li>
-                </ul>
-              </div>
+              <h4 style="color:#1d6f42;border-left:4px solid #1d6f42;padding-left:12px;" class="mb-3 mt-4">Alat & Skill yang Digunakan</h4>
+              <ul style="color:#ccc;line-height:2;">
+                <li>Microsoft Excel</li>
+                <li>Array Formula & SUMPRODUCT</li>
+                <li>Filter data berbasis tanggal dan teks</li>
+                <li>Pemecahan masalah analitis</li>
+              </ul>
 
-            </div>
-            <!-- ===== END BAHASA INDONESIA ===== -->
+            </div><!-- END BAHASA INDONESIA -->
 
           </div><!-- end col-lg-9 -->
         </div><!-- end row -->
-      </div><!-- end container -->
-    </section><!-- /Portfolio Details Section -->
+      </div>
+    </section>
 
   </main>
 
@@ -618,19 +532,15 @@
         <a href="https://www.linkedin.com/in/haris-saputra-1b4807245"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span>
-        </div>
+        <div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Haris</strong> <span>All Rights Reserved</span></div>
         <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -645,56 +555,24 @@
 
   <script>
     function switchLang(lang) {
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+      const btnEn = document.getElementById('btn-en');
+      const btnId = document.getElementById('btn-id');
+      if (lang === 'en') {
+        btnEn.style.background = '#1d6f42'; btnEn.style.color = '#fff';
+        btnId.style.background = 'transparent'; btnId.style.color = '#adb5bd';
+      } else {
+        btnId.style.background = '#1d6f42'; btnId.style.color = '#fff';
+        btnEn.style.background = 'transparent'; btnEn.style.color = '#adb5bd';
+      }
       document.querySelectorAll('.lang-content').forEach(function(el) {
         el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
       });
     }
   </script>
-
-  <!-- FINAL OVERRIDE — loaded last to beat main.css on dark-background template -->
   <style>
-    /* All text inside cards/boxes must be dark (visible on light backgrounds) */
-    .step-card, .step-card *,
-    .insight-card, .insight-card *,
-    .highlight-box, .highlight-box *,
-    .info-card .value,
-    .formula-box { color: inherit; }
-
-    .step-card h2, .step-card h3, .step-card h4,
-    .step-card h5, .step-card h6,
-    .step-card p, .step-card li, .step-card span,
-    .step-card strong { color: #212529 !important; }
-
-    .insight-card h2, .insight-card h3, .insight-card h4,
-    .insight-card h6,
-    .insight-card p, .insight-card li, .insight-card span,
-    .insight-card strong { color: #212529 !important; }
-    .insight-card h5 { color: #1d6f42 !important; }
-
-    .highlight-box, .highlight-box p,
-    .highlight-box strong, .highlight-box span,
-    .highlight-box i ~ * { color: #212529 !important; }
-
-    .info-card .value { color: #212529 !important; }
-    .info-card .label { color: #6c757d !important; }
-
-    .kpi-value { color: #1d6f42 !important; }
-    .kpi-label { color: #6c757d !important; }
-
-    .step-badge { color: #fff !important; }
-    .formula-box { color: #f8f9fa !important; }
-    .lang-btn.active { color: #fff !important; }
-
-    /* Section headings — visible on dark bg */
-    #portfolio-details h2,
-    #portfolio-details h3,
-    #portfolio-details h4 { color: #fff !important; }
-
-    /* Paragraph text directly in section (dark bg) */
-    #portfolio-details > .container > .row > .col-lg-9 > .lang-content.visible > div > p,
-    #portfolio-details > .container > .row > .col-lg-9 > .lang-content.visible > div > ul > li { color: #fff !important; }
+    .lang-content { display: none; }
+    .lang-content.visible { display: block; }
+    span.lang-content.visible { display: inline; }
   </style>
 
 </body>
